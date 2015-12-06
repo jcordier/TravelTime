@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e2e4673afe954a429e6cf86e9398fece" Name="Diagram1">
+        <EntityTypeShape EntityType="DB_9DF51E_traveltimeModel.Attraction" Width="1.5" PointX="7.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_9DF51E_traveltimeModel.Step" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_9DF51E_traveltimeModel.Trip" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_9DF51E_traveltimeModel.User" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <AssociationConnector Association="DB_9DF51E_traveltimeModel.FK_STEP_ATTRACTION" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_9DF51E_traveltimeModel.FK_STEP_TRIP" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_9DF51E_traveltimeModel.FK_Trip" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
