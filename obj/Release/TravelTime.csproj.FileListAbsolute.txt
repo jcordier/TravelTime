@@ -66,3 +66,4 @@ c:\users\jerem_000\documents\visual studio 2015\Projects\TravelTime\TravelTime\b
 c:\users\jerem_000\documents\visual studio 2015\Projects\TravelTime\TravelTime\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 c:\users\jerem_000\documents\visual studio 2015\Projects\TravelTime\TravelTime\obj\Release\TravelTime.dll
 c:\users\jerem_000\documents\visual studio 2015\Projects\TravelTime\TravelTime\obj\Release\TravelTime.pdb
+C:\Users\Jerem_000\documents\visual studio 2015\Projects\TravelTime\TravelTime\obj\Release\TravelTime.csprojResolveAssemblyReference.cache
