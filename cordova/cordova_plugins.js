@@ -5,6 +5,18 @@ module.exports = [
         "id": "cordova-plugin-whitelist.whitelist",
         "pluginId": "cordova-plugin-whitelist",
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-geolocation/geolocation.js",
+        "id": "cordova-plugin-geolocation.geolocation",
+        "pluginId": "cordova-plugin-geolocation",
+        "runs": true
+    },
+    {
+        "file": "plugins/facebookPluginConnect/facebookPluginConnect.js",
+        "id": "facebookPluginConnect.facebookPluginConnect",
+        "pluginId": "facebookPluginConnect",
+        "runs": true
     }
 ];
 module.exports.metadata = 

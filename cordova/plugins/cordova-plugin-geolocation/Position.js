@@ -1,4 +1,5 @@
 /*
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -15,21 +16,18 @@
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
+ *
 */
 
-/**
- * Implements the API of ExposedJsApi.java, but uses prompt() to communicate.
- * This is used pre-JellyBean, where addJavascriptInterface() is disabled.
- */
+var Coordinates = require('./Coordinates');
 
-module.exports = {
-    exec: function(bridgeSecret, service, action, callbackId, argsJson) {
-        return prompt(argsJson, 'gap:'+JSON.stringify([bridgeSecret, service, action, callbackId]));
-    },
-    setNativeToJsBridgeMode: function(bridgeSecret, value) {
-        prompt(value, 'gap_bridge_mode:' + bridgeSecret);
-    },
-    retrieveJsMessages: function(bridgeSecret, fromOnlineEvent) {
-        return prompt(+fromOnlineEvent, 'gap_poll:' + bridgeSecret);
+var Position = function(coords, timestamp) {
+    if (coords) {
+        this.coords = new Coordinates(coords.latitude, coords.longitude, coords.altitude, coords.accuracy, coords.heading, coords.velocity, coords.altitudeAccuracy);
+    } else {
+        this.coords = new Coordinates();
     }
+    this.timestamp = (timestamp !== undefined) ? timestamp : new Date();
 };
+
+module.exports = Position;

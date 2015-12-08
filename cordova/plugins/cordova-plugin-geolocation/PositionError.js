@@ -1,4 +1,5 @@
 /*
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -15,22 +16,23 @@
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
+ *
 */
 
 /**
- * Exports the ExposedJsApi.java object if available, otherwise exports the PromptBasedNativeApi.
+ * Position error object
+ *
+ * @constructor
+ * @param code
+ * @param message
  */
-
-var nativeApi = this._cordovaNative || require('cordova/android/promptbasednativeapi');
-var currentApi = nativeApi;
-
-module.exports = {
-    get: function() { return currentApi; },
-    setPreferPrompt: function(value) {
-        currentApi = value ? require('cordova/android/promptbasednativeapi') : nativeApi;
-    },
-    // Used only by tests.
-    set: function(value) {
-        currentApi = value;
-    }
+var PositionError = function(code, message) {
+    this.code = code || null;
+    this.message = message || '';
 };
+
+PositionError.PERMISSION_DENIED = 1;
+PositionError.POSITION_UNAVAILABLE = 2;
+PositionError.TIMEOUT = 3;
+
+module.exports = PositionError;
