@@ -1,0 +1,30 @@
+﻿
+@model IEnumerable<TravelTime.Models.Day>
+
+    @{
+        ViewBag.Title = "Days";
+    }
+
+    <h2>Index</h2>
+    @Html.ActionLink("Back", "Index", new { id = 3 })
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.ActionLink("Plan Day", "Day", new { Date = item.Date, tripId = item.TripId })
+                </td>
+            </tr>
+        }
+
+    </table>

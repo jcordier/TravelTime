@@ -64,6 +64,6 @@ c:\users\jerem_000\documents\visual studio 2015\Projects\TravelTime\TravelTime\b
 c:\users\jerem_000\documents\visual studio 2015\Projects\TravelTime\TravelTime\bin\Microsoft.Owin.Security.Google.xml
 c:\users\jerem_000\documents\visual studio 2015\Projects\TravelTime\TravelTime\bin\Microsoft.Owin.Security.Twitter.xml
 c:\users\jerem_000\documents\visual studio 2015\Projects\TravelTime\TravelTime\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-c:\users\jerem_000\documents\visual studio 2015\Projects\TravelTime\TravelTime\obj\Debug\TravelTime.csprojResolveAssemblyReference.cache
 c:\users\jerem_000\documents\visual studio 2015\Projects\TravelTime\TravelTime\obj\Debug\TravelTime.dll
 c:\users\jerem_000\documents\visual studio 2015\Projects\TravelTime\TravelTime\obj\Debug\TravelTime.pdb
+C:\Users\Jerem_000\documents\visual studio 2015\Projects\TravelTime\TravelTime\obj\Debug\TravelTime.csprojResolveAssemblyReference.cache

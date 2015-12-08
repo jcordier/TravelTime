@@ -1,0 +1,52 @@
+﻿@model TravelTime.Models.Day
+
+@{
+    ViewBag.Title = "Day";
+}
+
+<h2>Day @Html.DisplayFor(model => model.Date)</h2>
+
+<p>
+    @Html.ActionLink("Add Step", "CreateStep", new {date = Model.Date, tripId = Model.TripId })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Time
+        </th>
+        <th>
+            Photo
+        </th>
+        <th>
+            Adress
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.Steps)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Time)
+            </td>
+            <td>
+                <img src="@item.Attraction1.Picture"/>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Attraction1.Address)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+
