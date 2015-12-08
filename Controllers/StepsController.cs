@@ -59,7 +59,12 @@ namespace TravelTime.Controllers
         {
             if (ModelState.IsValid)
             {
-                Attraction a = attractionM.getAttraction(step.AttractionId);
+                Attraction a;
+                List<Attraction> attractions = db.Attraction.Where(att => att.web_id == step.AttractionId).ToList();
+                if (attractions.Count < 0)
+                    a = attractions[0];
+                else
+                    a = attractionM.getAttraction(step.AttractionId);
                 Step s = new Step();
                 DateTime d = new DateTime(step.Date.Year, step.Date.Month, step.Date.Day, step.Time.Hour, step.Time.Minute, step.Time.Second);
                 s.Attraction1 = a;

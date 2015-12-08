@@ -90,23 +90,34 @@ namespace TravelTime
             string responseFromServer = reader.ReadToEnd();
             // Clean up the streams and the response.
             dynamic json = JsonConvert.DeserializeObject(responseFromServer);
-            try
-            {
+            try {
                 a.Name = json.response.venue.name;
                 a.Categorie = json.response.venue.categories[0].name;
                 a.Address = json.response.venue.location.address;
                 a.City = json.response.venue.location.city;
-                a.Contact = (json.response.venue.contact.phone != null) ? json.response.venue.contact.phone : "";
-                a.Description = (json.response.venue.tips.groups[0].items[0].text != null) ? json.response.venue.tips.groups[0].items[0].text : "";
-                a.Opening = (json.response.venue.hours != null & json.response.venue.hours.status != null) ? json.response.venue.contact.status : "";
-                a.Latitude = json.response.venue.location.lat;
-                a.Longitude = json.response.venue.location.lng;
                 a.web_id = json.response.venue.id;
-                a.Display = a.Name + " - " + a.Categorie;
             }
             catch (Exception e)
             {
-
+            }
+            try
+            {
+                a.Latitude = json.response.venue.location.lat;
+                a.Longitude = json.response.venue.location.lng;
+            }
+            catch (Exception e)
+            {
+            }
+            try {
+            if (json.response.venue.photos.count > 0)
+                    a.Picture = json.response.venue.photos.groups[0].items[0].prefix + "width300" +
+                        json.response.venue.photos.groups[0].items[0].suffix;
+                a.Contact = (json.response.venue.contact.phone != null) ? json.response.venue.contact.phone : "";
+                a.Description = (json.response.venue.tips.groups[0].items[0].text != null) ? json.response.venue.tips.groups[0].items[0].text : "";
+                a.Opening = (json.response.venue.hours != null & json.response.venue.hours.status != null) ? json.response.venue.contact.status : "";
+            }
+            catch (Exception e)
+            {
             }
             reader.Close();
             response.Close();

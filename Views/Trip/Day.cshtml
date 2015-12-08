@@ -7,7 +7,8 @@
 <h2>Day @Html.DisplayFor(model => model.Date)</h2>
 
 <p>
-    @Html.ActionLink("Add Step", "CreateStep", new {date = Model.Date, tripId = Model.TripId })
+    @Html.ActionLink("Add Step", "CreateStep", new {date = Model.Date, tripId = Model.TripId }) | 
+    @Html.ActionLink("Back", "DaysIndex", new {tripId = Model.TripId })
 </p>
 <table class="table">
     <tr>
@@ -16,6 +17,12 @@
         </th>
         <th>
             Time
+        </th>
+        <th>
+            Photo
+        </th>
+        <th>
+            Adress
         </th>
         <th></th>
     </tr>
@@ -28,6 +35,12 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Time)
+            </td>
+            <td>
+                <img src="@item.Attraction1.Picture"/>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Attraction1.Address)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |

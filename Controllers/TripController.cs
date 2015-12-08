@@ -80,12 +80,15 @@ namespace TravelTime.Controllers
             var step = db.Step
                 .Where(s => s.TripId == tripId)
                 .Where(s => ((DateTime)s.Time).Day == ((DateTime)date).Day)
-                .Where(s => ((DateTime)s.Time).Year == ((DateTime)date).Year);
+                .Where(s => ((DateTime)s.Time).Month == ((DateTime)date).Month)
+                .Where(s => ((DateTime)s.Time).Year == ((DateTime)date).Year)
+                .Include(s => s.Attraction1);
 
             Day day = new Day();
             day.TripId = System.Convert.ToInt32(tripId);
             day.Steps = step.ToList();
             day.Date = System.Convert.ToDateTime(date);
+
             
             return View(day);
         }

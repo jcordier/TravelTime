@@ -26,6 +26,7 @@ namespace TravelTime.Models
         public string Description { get; set; }
         public string Picture { get; set; }
         public string Address { get; set; }
+        public Nullable<double> Latitude { get; set; }
         public string PostCode { get; set; }
         public string City { get; set; }
         public string Contact { get; set; }
@@ -33,8 +34,7 @@ namespace TravelTime.Models
         public Nullable<int> Rating { get; set; }
         public string Categorie { get; set; }
         public string Price { get; set; }
-        public Nullable<decimal> Latitude { get; set; }
-        public Nullable<decimal> Longitude { get; set; }
+        public Nullable<double> Longitude { get; set; }
 
         public string Display { get; set; }
     

@@ -21,8 +21,8 @@ namespace TravelTime.Models
         public Nullable<int> Attraction { get; set; }
         public string Comment { get; set; }
         public string Media { get; set; }
-        public Nullable<decimal> Latitude { get; set; }
-        public Nullable<decimal> Longitude { get; set; }
+        public Nullable<double> Latitude { get; set; }
+        public Nullable<double> Longitude { get; set; }
     
         public virtual Attraction Attraction1 { get; set; }
         public virtual Trip Trip { get; set; }

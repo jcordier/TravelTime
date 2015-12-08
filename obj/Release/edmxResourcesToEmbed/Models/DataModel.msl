@@ -1,17 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="DB_9DF51E_traveltimeModelStoreContainer" CdmEntityContainer="DB_9DF51E_traveltimeEntities">
+  <EntityContainerMapping StorageEntityContainer="DataModelStoreContainer" CdmEntityContainer="DB_9DF51E_traveltimeEntities1">
     <EntitySetMapping Name="Attraction">
-      <EntityTypeMapping TypeName="DB_9DF51E_traveltimeModel.Attraction">
+      <EntityTypeMapping TypeName="DataModel.Attraction">
         <MappingFragment StoreEntitySet="Attraction">
-          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
-          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="web_id" ColumnName="web_id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="Picture" ColumnName="Picture" />
           <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
           <ScalarProperty Name="PostCode" ColumnName="PostCode" />
           <ScalarProperty Name="City" ColumnName="City" />
           <ScalarProperty Name="Contact" ColumnName="Contact" />
@@ -19,14 +18,13 @@
           <ScalarProperty Name="Rating" ColumnName="Rating" />
           <ScalarProperty Name="Categorie" ColumnName="Categorie" />
           <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Step">
-      <EntityTypeMapping TypeName="DB_9DF51E_traveltimeModel.Step">
+      <EntityTypeMapping TypeName="DataModel.Step">
         <MappingFragment StoreEntitySet="Step">
-          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
-          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Time" ColumnName="Time" />
@@ -34,11 +32,13 @@
           <ScalarProperty Name="Attraction" ColumnName="Attraction" />
           <ScalarProperty Name="Comment" ColumnName="Comment" />
           <ScalarProperty Name="Media" ColumnName="Media" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Trip">
-      <EntityTypeMapping TypeName="DB_9DF51E_traveltimeModel.Trip">
+      <EntityTypeMapping TypeName="DataModel.Trip">
         <MappingFragment StoreEntitySet="Trip">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -50,7 +50,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="User">
-      <EntityTypeMapping TypeName="DB_9DF51E_traveltimeModel.User">
+      <EntityTypeMapping TypeName="DataModel.User">
         <MappingFragment StoreEntitySet="User">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Firstname" ColumnName="Firstname" />

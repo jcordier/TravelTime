@@ -16,7 +16,7 @@ namespace TravelTime.Models
     public partial class DB_9DF51E_traveltimeEntities : DbContext
     {
         public DB_9DF51E_traveltimeEntities()
-            : base("name=DB_9DF51E_traveltimeEntities")
+            : base("name=DB_9DF51E_traveltimeEntities1")
         {
         }
     

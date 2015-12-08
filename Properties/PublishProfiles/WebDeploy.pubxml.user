@@ -128,7 +128,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/11/2015 12:05:03</publishTime>
     </File>
     <File Include="bin/TravelTime.dll">
-      <publishTime>12/05/2015 23:23:51</publishTime>
+      <publishTime>12/06/2015 23:37:34</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>04/11/2015 12:05:05</publishTime>
@@ -179,7 +179,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/04/2015 12:04:49</publishTime>
     </File>
     <File Include="Models/DataModel.edmx.diagram">
-      <publishTime>12/03/2015 01:23:13</publishTime>
+      <publishTime>12/06/2015 23:35:41</publishTime>
     </File>
     <File Include="Models/Trip.edmx.diagram">
       <publishTime>10/11/2015 19:59:42</publishTime>
@@ -320,7 +320,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Views/Trip/Day.cshtml">
-      <publishTime>12/05/2015 21:43:39</publishTime>
+      <publishTime>06/12/2015 18:09:13</publishTime>
     </File>
     <File Include="Views/Trip/DaysIndex.cshtml">
       <publishTime>11/25/2015 02:42:52</publishTime>
@@ -338,7 +338,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/24/2015 11:33:12</publishTime>
     </File>
     <File Include="Views/Users/Create.cshtml">
-      <publishTime>11/17/2015 18:37:51</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Views/Users/Delete.cshtml">
       <publishTime>11/17/2015 18:37:52</publishTime>
@@ -359,7 +359,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/11/2015 12:04:49</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/16/2015 13:34:05</publishTime>
+      <publishTime>12/06/2015 22:27:19</publishTime>
     </File>
   </ItemGroup>
 </Project>

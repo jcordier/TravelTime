@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="DB_9DF51E_traveltimeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="DataModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="Attraction">
     <Key>
       <PropertyRef Name="Id" />
@@ -10,6 +10,7 @@
     <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="Picture" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Latitude" Type="Double" />
     <Property Name="PostCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Contact" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -17,9 +18,8 @@
     <Property Name="Rating" Type="Int32" />
     <Property Name="Categorie" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Price" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Longitude" Type="Double" />
     <NavigationProperty Name="Step" Relationship="Self.FK_STEP_ATTRACTION" FromRole="Attraction" ToRole="Step" />
-    <Property Name="Latitude" Type="Decimal" Precision="18" Scale="0" />
-    <Property Name="Longitude" Type="Decimal" Precision="18" Scale="0" />
   </EntityType>
   <EntityType Name="Step">
     <Key>
@@ -33,10 +33,10 @@
     <Property Name="Attraction" Type="Int32" />
     <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="Media" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Latitude" Type="Double" />
+    <Property Name="Longitude" Type="Double" />
     <NavigationProperty Name="Attraction1" Relationship="Self.FK_STEP_ATTRACTION" FromRole="Step" ToRole="Attraction" />
     <NavigationProperty Name="Trip" Relationship="Self.FK_STEP_TRIP" FromRole="Step" ToRole="Trip" />
-    <Property Name="Latitude" Type="Decimal" Precision="18" Scale="0" />
-    <Property Name="Longitude" Type="Decimal" Precision="18" Scale="0" />
   </EntityType>
   <EntityType Name="Trip">
     <Key>
@@ -98,7 +98,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="DB_9DF51E_traveltimeEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="DB_9DF51E_traveltimeEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Attraction" EntityType="Self.Attraction" />
     <EntitySet Name="Step" EntityType="Self.Step" />
     <EntitySet Name="Trip" EntityType="Self.Trip" />
