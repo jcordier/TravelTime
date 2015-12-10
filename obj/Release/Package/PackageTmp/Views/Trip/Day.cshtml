@@ -7,7 +7,8 @@
 <h2>Day @Html.DisplayFor(model => model.Date)</h2>
 
 <p>
-    @Html.ActionLink("Add Step", "CreateStep", new {date = Model.Date, tripId = Model.TripId })
+    @Html.ActionLink("Add Step", "CreateStep", new {date = Model.Date, tripId = Model.TripId }) | 
+    @Html.ActionLink("Back", "DaysIndex", new {tripId = Model.TripId })
 </p>
 <table class="table">
     <tr>

@@ -16,14 +16,9 @@ namespace TravelTime
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Trip", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Users", action = "Index", id = UrlParameter.Optional }
             );
-
-            routes.MapRoute(
-                name: "Trip",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Trip", action = "Index", id = UrlParameter.Optional }
-            );
+            
         }
     }
 }

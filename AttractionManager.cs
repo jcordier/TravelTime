@@ -15,8 +15,7 @@ namespace TravelTime
         private string client_secret = "0PV3KLUBI1RBHG3EVDLW5LTMXA53SD2GFPJ4VNTR2UW4RRPY";
         private string client_id = "KLSKVBRRASCKSHA54GH1FFQ0CCJWO4V5ARYDZWMLLJHFOJWT";
         private string version = "20130815";
-
-        //public List<Attraction> getAttraction(string city, int nb)
+        
         public List<Attraction> getAttractions(string city, int nb)
         {
             List<Attraction> result = new List<Attraction>();
@@ -26,7 +25,8 @@ namespace TravelTime
                 + "client_secret=" + client_secret
                 + "&client_id=" + client_id
                 + "&v=" + version
-                + "&near=" + near;
+                + "&near=" + near
+                + "&limit="+ nb;
             //params= {new "client_id"= client_id, "client_secret": client_secret, "near": near, "v": version};
             WebRequest request = WebRequest.Create(url);
             WebResponse response = request.GetResponse();
@@ -123,6 +123,31 @@ namespace TravelTime
             response.Close();
             return a;
 
+        }
+
+        public dynamic getCategories()
+        {
+            var url = "https://api.foursquare.com/v2/venues/categories?"
+                + "client_secret=" + client_secret
+                + "&client_id=" + client_id
+                + "&v=" + version;
+            //params= {new "client_id"= client_id, "client_secret": client_secret, "near": near, "v": version};
+            WebRequest request = WebRequest.Create(url);
+            WebResponse response = request.GetResponse();
+            // Display the status.
+            //Console.WriteLine(((HttpWebResponse)response).StatusDescription);
+            // Get the stream containing content returned by the server.
+            Stream dataStream = response.GetResponseStream();
+            // Open the stream using a StreamReader for easy access.
+            StreamReader reader = new StreamReader(dataStream);
+            // Read the content.
+            string responseFromServer = reader.ReadToEnd();
+            // Clean up the streams and the response.
+            dynamic json = JsonConvert.DeserializeObject(responseFromServer);
+            
+            reader.Close();
+            response.Close();
+            return json.response.categories;
         }
     }
 }

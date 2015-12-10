@@ -14,6 +14,19 @@ namespace TravelTime.Models
     
     public partial class Step
     {
+        public Step()
+        {
+
+        }
+
+        public Step(Attraction a)
+        {
+            Name = a.Name;
+            Latitude = a.Latitude;
+            Longitude = a.Longitude;
+            Attraction1 = a;
+        }
+
         public int Id { get; set; }
         public string Name { get; set; }
         public Nullable<System.DateTime> Time { get; set; }

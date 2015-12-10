@@ -14,9 +14,6 @@ namespace TravelTime
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
-            /*AttractionManager a = new AttractionManager();
-            System.Collections.Generic.List<Attraction> ass = a.getAttractions("Odense", 40);
-            a.getAttraction(ass[0].web_id);*/
 
         }
     }

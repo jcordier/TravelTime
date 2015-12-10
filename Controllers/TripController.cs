@@ -17,23 +17,27 @@ namespace TravelTime.Controllers
         private AttractionManager attractionM = new AttractionManager();
 
         // GET: Trip
-        public ActionResult Index()
+        public ActionResult Index(int? id)
         {
             try
             {
-                var id = RouteData.Values["id"];
-                var trip = db.Trip.Where(t => t.UserId == int.Parse(String.Format("{0}", id)));
-                return View(trip.ToList());
+                var user = db.User.Find(System.Convert.ToInt64(id));
+                List<Trip> result = user.Trip.ToList();
+                return View(result);
             }
             catch(Exception e)
             {
-                return View(db.Trip.ToList());
+                return RedirectToAction("Index", "Users");
             }
             
         }
 
         public ActionResult DaysIndex(int? tripId)
         {
+            ItineraryManager ItM = new ItineraryManager();
+
+            ItM.run(tripId.Value);
+
             List<Day> days = new List<Day>();
             if (tripId == null)
             {
@@ -86,9 +90,8 @@ namespace TravelTime.Controllers
 
             Day day = new Day();
             day.TripId = System.Convert.ToInt32(tripId);
-            day.Steps = step.ToList();
+            day.Steps = step.OrderBy(o => o.Time).ToList();
             day.Date = System.Convert.ToDateTime(date);
-
             
             return View(day);
         }
@@ -111,7 +114,6 @@ namespace TravelTime.Controllers
         // GET: Trip/Create
         public ActionResult Create()
         {
-            ViewBag.UserId = new SelectList(db.User, "Id", "Firstname");
             return View();
         }
 
@@ -206,5 +208,9 @@ namespace TravelTime.Controllers
             return RedirectToAction("Create", "Steps", new { tripId = tripId, date = date });
         }
 
+        public ActionResult Plan(int? tripId)
+        {
+            return RedirectToAction("Index", "Steps", new { tripId = tripId});
+        }
     }
 }
