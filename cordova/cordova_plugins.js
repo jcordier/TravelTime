@@ -1,11 +1,17 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/cordova-plugin-whitelist/whitelist.js",
-        "id": "cordova-plugin-whitelist.whitelist",
-        "pluginId": "cordova-plugin-whitelist",
+        "file": "plugins/cordova-plugin-geolocation/Position.js",
+        "id": "cordova-plugin-geolocation.Position",
+        "pluginId": "cordova-plugin-geolocation.Position",
         "runs": true
     },
+        {
+            "file": "plugins/cordova-plugin-geolocation/Coordinates.js",
+            "id": "cordova-plugin-geolocation.Coordinates",
+            "pluginId": "cordova-plugin-geolocation.Coordinates",
+            "runs": true
+        },
     {
         "file": "plugins/cordova-plugin-geolocation/geolocation.js",
         "id": "cordova-plugin-geolocation.geolocation",
@@ -14,8 +20,8 @@ module.exports = [
     },
     {
         "file": "plugins/facebookPluginConnect/facebookPluginConnect.js",
-        "id": "facebookPluginConnect.facebookPluginConnect",
-        "pluginId": "facebookPluginConnect",
+        "id": "com.phonegap.plugins.facebookconnect.FacebookConnectPlugin",
+        "pluginId": "com.phonegap.plugins.facebookconnect.FacebookConnectPlugin",
         "runs": true
     }
 ];

@@ -30,40 +30,43 @@
  * @param {Object} altacc
  * @constructor
  */
-var Coordinates = function(lat, lng, alt, acc, head, vel, altacc) {
-    /**
-     * The latitude of the position.
-     */
-    this.latitude = lat;
-    /**
-     * The longitude of the position,
-     */
-    this.longitude = lng;
-    /**
-     * The accuracy of the position.
-     */
-    this.accuracy = acc;
-    /**
-     * The altitude of the position.
-     */
-    this.altitude = (alt !== undefined ? alt : null);
-    /**
-     * The direction the device is moving at the position.
-     */
-    this.heading = (head !== undefined ? head : null);
-    /**
-     * The velocity with which the device is moving at the position.
-     */
-    this.speed = (vel !== undefined ? vel : null);
 
-    if (this.speed === 0 || this.speed === null) {
-        this.heading = NaN;
-    }
+cordova.define("cordova-plugin-geolocation.Coordinates", function (require, exports, module) {
+    var Coordinates = function (lat, lng, alt, acc, head, vel, altacc) {
+        /**
+         * The latitude of the position.
+         */
+        this.latitude = lat;
+        /**
+         * The longitude of the position,
+         */
+        this.longitude = lng;
+        /**
+         * The accuracy of the position.
+         */
+        this.accuracy = acc;
+        /**
+         * The altitude of the position.
+         */
+        this.altitude = (alt !== undefined ? alt : null);
+        /**
+         * The direction the device is moving at the position.
+         */
+        this.heading = (head !== undefined ? head : null);
+        /**
+         * The velocity with which the device is moving at the position.
+         */
+        this.speed = (vel !== undefined ? vel : null);
 
-    /**
-     * The altitude accuracy of the position.
-     */
-    this.altitudeAccuracy = (altacc !== undefined) ? altacc : null;
-};
+        if (this.speed === 0 || this.speed === null) {
+            this.heading = NaN;
+        }
 
-module.exports = Coordinates;
+        /**
+         * The altitude accuracy of the position.
+         */
+        this.altitudeAccuracy = (altacc !== undefined) ? altacc : null;
+    };
+
+    module.exports = Coordinates;
+});

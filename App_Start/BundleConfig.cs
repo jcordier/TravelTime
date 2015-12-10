@@ -15,6 +15,7 @@ namespace TravelTime
                         "~/Scripts/jquery.validate*"));
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+                        "~/Content/lib/underscore.js",
                         "~/Content/lib/angular/angular.js",
                         "~/Content/lib/angular-google-maps/angular-google-maps.js"));
 
@@ -22,6 +23,8 @@ namespace TravelTime
                         "~/cordova/cordova.js",
                         "~/cordova/cordova-plugins.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/location").Include(
+                        "~/Scripts/location/location.js"));
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(

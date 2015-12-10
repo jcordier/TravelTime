@@ -18,16 +18,35 @@
  * under the License.
  *
 */
+cordova.define("cordova-plugin-geolocation.Position", function (require, exports, module) {
+    var Coordinates = require('./Coordinates');
 
-var Coordinates = require('./Coordinates');
+    var Position = function (coords, timestamp) {
+        if (coords) {
+            this.coords = new Coordinates(coords.latitude, coords.longitude, coords.altitude, coords.accuracy, coords.heading, coords.velocity, coords.altitudeAccuracy);
+        } else {
+            this.coords = new Coordinates();
+        }
+        this.timestamp = (timestamp !== undefined) ? timestamp : new Date();
+    };
 
-var Position = function(coords, timestamp) {
-    if (coords) {
-        this.coords = new Coordinates(coords.latitude, coords.longitude, coords.altitude, coords.accuracy, coords.heading, coords.velocity, coords.altitudeAccuracy);
-    } else {
-        this.coords = new Coordinates();
-    }
-    this.timestamp = (timestamp !== undefined) ? timestamp : new Date();
-};
+    module.exports = Position;
 
-module.exports = Position;
+    /**
+     * Position error object
+     *
+     * @constructor
+     * @param code
+     * @param message
+     */
+    var PositionError = function (code, message) {
+        this.code = code || null;
+        this.message = message || '';
+    };
+
+    PositionError.PERMISSION_DENIED = 1;
+    PositionError.POSITION_UNAVAILABLE = 2;
+    PositionError.TIMEOUT = 3;
+
+    module.exports = PositionError;
+});

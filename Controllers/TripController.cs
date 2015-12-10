@@ -149,6 +149,12 @@ namespace TravelTime.Controllers
             return View(trip);
         }
 
+        // GET: Trip/Location
+        public ActionResult Location(int? id)
+        {
+            return View();
+        }
+
         // POST: Trip/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
