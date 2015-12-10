@@ -5,6 +5,7 @@ using System.Data.Entity;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Threading;
 using System.Web;
 using System.Web.Mvc;
 using TravelTime.Models;
@@ -32,11 +33,19 @@ namespace TravelTime.Controllers
             
         }
 
-        public ActionResult DaysIndex(int? tripId)
+        public ActionResult Run(int? tripId)
         {
+
             ItineraryManager ItM = new ItineraryManager();
 
-            ItM.run(tripId.Value);
+            Thread myThread;
+            myThread = new Thread(()=>ItM.run(tripId.Value));
+            myThread.Start();
+            return RedirectToAction("DaysIndex", new { tripId = tripId });
+        }
+
+        public ActionResult DaysIndex(int? tripId)
+        {
 
             List<Day> days = new List<Day>();
             if (tripId == null)

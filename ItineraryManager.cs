@@ -19,35 +19,67 @@ namespace TravelTime
             Trip trip = db.Trip.Find(tripId);
             List<Step> steps = trip.Step.ToList();
 
-            List<Step> nightSpot;
+            List<Step> nightSpot = getNightSpot(steps);
 
             int nbDays = ((DateTime)trip.End - (DateTime)trip.Beginning).Days;
-            int nbSteps = trip.Step.Count();
 
-            if (nbSteps != 0)
+            if (steps.Count() != 0)
             {
+                int nbSteps = steps.Count();
+                int stepByDay = 1;
                 Step currentStep = steps[0];
                 DateTime currentH = (DateTime)trip.Beginning;
                 currentH = ChangeTime(currentH, 10, 0, 0, 0);
                 currentStep.Time = currentH;
                 db.Entry(currentStep).State = EntityState.Modified;
                 steps.Remove(currentStep);
-                int day = 0;
-                int stepByDay = 1;
 
                 while (steps.Count() > 0)
                 {
                     currentStep = getNearestStep(currentStep, steps);
                     steps.Remove(currentStep);
 
-                    if (stepByDay > (nbSteps / nbDays) + 1)
+                    if (stepByDay > (nbSteps / nbDays))
                     {
                         currentH = currentH.AddDays(1);
                         currentH = ChangeTime(currentH, 10, 0, 0, 0);
+                        stepByDay = 1;
                     }
                     else
                     {
-                        currentH = currentH.AddHours(11 / (nbSteps / nbDays));
+                        currentH = currentH.AddHours(8 / (nbSteps / nbDays));
+                        stepByDay++;
+                    }
+                    currentStep.Time = currentH;
+                    db.Entry(currentStep).State = EntityState.Modified;
+                }
+            }
+            if(nightSpot.Count()>0)
+            {
+                Step currentStep = nightSpot[0];
+                DateTime currentH = (DateTime)trip.Beginning;
+                currentH = ChangeTime(currentH, 21, 0, 0, 0);
+                currentStep.Time = currentH;
+                db.Entry(currentStep).State = EntityState.Modified;
+                nightSpot.Remove(currentStep);
+                int stepByDay = 1;
+                int nbSteps = nightSpot.Count();
+
+                while (nightSpot.Count() > 0)
+                {
+                    currentStep = getNearestStep(currentStep, nightSpot);
+                    nightSpot.Remove(currentStep);
+
+                    if (stepByDay > (nbSteps / nbDays))
+                    {
+                        currentH = currentH.AddDays(1);
+                        currentH = ChangeTime(currentH, 21, 0, 0, 0);
+                        stepByDay = 1;
+                    }
+                    else
+                    {
+                        currentH = currentH.AddHours(2 / (nbSteps / nbDays));
+                        stepByDay++;
                     }
                     currentStep.Time = currentH;
                     db.Entry(currentStep).State = EntityState.Modified;
@@ -104,12 +136,43 @@ namespace TravelTime
         {
             List<Step> result = new List<Step>();
             dynamic categories = AttM.getCategories();
-
+                
             foreach (Step s in steps)
             {
-                
+                foreach(dynamic c in categories)
+                {
+                    if(c.id == "4d4b7105d754a06376d81259"){
+                        dynamic d = searchIn(c, s.Attraction1.Categorie);
+                        if (d != null)
+                        {
+                            result.Add(s);
+                        }
+                    }
+                }
             }
+            foreach(Step s in result)
+            {
+                steps.Remove(s);
+            }
+            return result;
+        }
 
+        private dynamic searchIn(dynamic node, string cat)
+        {
+            dynamic result=null;
+            foreach (dynamic n in node.categories)
+            {
+                if (n.name == cat)
+                {
+                    result = n;
+                    break;
+                }
+                else
+                {
+                    if (n.categories.Count > 0)
+                        result = searchIn(n, cat);
+                }
+            }
             return result;
         }
 

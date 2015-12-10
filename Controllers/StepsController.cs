@@ -164,6 +164,12 @@ namespace TravelTime.Controllers
             return Json(attractionM.getAttraction(web_id),JsonRequestBehavior.AllowGet);
         }
 
+        public ActionResult TripIndex(int tripId)
+        {
+            Trip trip = db.Trip.Find(tripId);
+            return RedirectToAction("Index", "Trip", new { id = trip.UserId });
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)
