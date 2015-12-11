@@ -192,6 +192,12 @@ namespace TravelTime.Controllers
             return View(trip);
         }
 
+        // GET: Trip/Location
+        public ActionResult Location(int? id)
+        {
+            return View();
+        }
+
         // POST: Trip/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
