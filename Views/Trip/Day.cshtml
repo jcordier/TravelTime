@@ -3,11 +3,7 @@
 @{
     ViewBag.Title = "Day";
 }
-@section Scripts {
-    @Scripts.Render("~/bundles/angular")
-    @Scripts.Render("~/bundles/location")
 
-}
 <h2>Day @Html.DisplayFor(model => model.Date)</h2>
 
 <p>
@@ -93,5 +89,10 @@
 
     </div>
 
+@section Scripts {
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/cordova")
+    @Scripts.Render("~/bundles/location")
 
+}
 

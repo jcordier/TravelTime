@@ -14,7 +14,7 @@ namespace TravelTime
                         "~/Scripts/lib/angular/angular.js",
                         "~/Scripts/lib/angular-google-maps/angular-google-maps.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/cordovaand").Include(
+            bundles.Add(new ScriptBundle("~/bundles/cordova").Include(
                         "~/cordova/cordova.js",
                         "~/cordova/js/index.js",
                         "~/cordova/cordova-plugins.js"

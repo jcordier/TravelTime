@@ -48,6 +48,51 @@
                 @Html.ActionLink("Delete", "Delete", new { id = item.Id })
             </td>
         </tr>
+
     }
 
+    
+    </table>
+<div ng-app="map">
+        <div ng-controller="mapController">
+
+            {{position}}
+            <br />
+            {{activity}}
+
+            <br />
+            {{closest}}
+            
+
+            <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+                <ui-gmap-markers models="user" coords="'self'" click="'onClick'">
+                    <ui-gmap-windows show="show">
+                        <div ng-non-bindable>you</div>
+                    </ui-gmap-windows>
+                </ui-gmap-markers>
+                <ui-gmap-markers models="markers" coords="'self'" click="'onClick'">
+                    <ui-gmap-windows show="show">
+                        <div ng-non-bindable>{{title}}</div>
+                    </ui-gmap-windows>
+                </ui-gmap-markers>
+                <ui-gmap-polylines models="trip" path="'path'" stroke="'stroke'" visible="'visible'"
+                                   geodesic="'geodesic'" static="true">
+                </ui-gmap-polylines>
+                <ui-gmap-polylines models="walk" path="'path'" stroke="'stroke'" visible="'visible'"
+                                   geodesic="'geodesic'" static="true">
+                </ui-gmap-polylines>
+            </ui-gmap-google-map>
+
+
+            <h2 ng-click="saveWalkPath()" class="btn btn-primary">Save path</h2>
+        </div>
+
+    </div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/cordova")
+    @Scripts.Render("~/bundles/location")
+
+}
 

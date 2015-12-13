@@ -67,3 +67,36 @@ c:\users\jerem_000\documents\visual studio 2015\Projects\TravelTime\TravelTime\b
 c:\users\jerem_000\documents\visual studio 2015\Projects\TravelTime\TravelTime\obj\Debug\TravelTime.dll
 c:\users\jerem_000\documents\visual studio 2015\Projects\TravelTime\TravelTime\obj\Debug\TravelTime.pdb
 C:\Users\Jerem_000\documents\visual studio 2015\Projects\TravelTime\TravelTime\obj\Debug\TravelTime.csprojResolveAssemblyReference.cache
+E:\sdu\adsproj3\TravelTime\bin\TravelTime.dll.config
+E:\sdu\adsproj3\TravelTime\bin\TravelTime.dll
+E:\sdu\adsproj3\TravelTime\bin\TravelTime.pdb
+E:\sdu\adsproj3\TravelTime\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\sdu\adsproj3\TravelTime\bin\System.Net.Http.Formatting.xml
+E:\sdu\adsproj3\TravelTime\bin\System.Web.Http.xml
+E:\sdu\adsproj3\TravelTime\bin\System.Web.Http.WebHost.xml
+E:\sdu\adsproj3\TravelTime\bin\System.Web.Helpers.xml
+E:\sdu\adsproj3\TravelTime\bin\System.Web.Mvc.xml
+E:\sdu\adsproj3\TravelTime\bin\System.Web.Optimization.xml
+E:\sdu\adsproj3\TravelTime\bin\System.Web.Razor.xml
+E:\sdu\adsproj3\TravelTime\bin\System.Web.WebPages.xml
+E:\sdu\adsproj3\TravelTime\bin\System.Web.WebPages.Deployment.xml
+E:\sdu\adsproj3\TravelTime\bin\System.Web.WebPages.Razor.xml
+E:\sdu\adsproj3\TravelTime\bin\Antlr3.Runtime.pdb
+E:\sdu\adsproj3\TravelTime\bin\Newtonsoft.Json.xml
+E:\sdu\adsproj3\TravelTime\bin\EntityFramework.xml
+E:\sdu\adsproj3\TravelTime\bin\EntityFramework.SqlServer.xml
+E:\sdu\adsproj3\TravelTime\bin\Microsoft.AspNet.Identity.Core.xml
+E:\sdu\adsproj3\TravelTime\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\sdu\adsproj3\TravelTime\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\sdu\adsproj3\TravelTime\bin\Microsoft.Owin.xml
+E:\sdu\adsproj3\TravelTime\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\sdu\adsproj3\TravelTime\bin\Microsoft.Owin.Security.xml
+E:\sdu\adsproj3\TravelTime\bin\Microsoft.Owin.Security.Facebook.xml
+E:\sdu\adsproj3\TravelTime\bin\Microsoft.Owin.Security.Cookies.xml
+E:\sdu\adsproj3\TravelTime\bin\Microsoft.Owin.Security.OAuth.xml
+E:\sdu\adsproj3\TravelTime\bin\Microsoft.Owin.Security.Google.xml
+E:\sdu\adsproj3\TravelTime\bin\Microsoft.Owin.Security.Twitter.xml
+E:\sdu\adsproj3\TravelTime\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\sdu\adsproj3\TravelTime\obj\Debug\TravelTime.csprojResolveAssemblyReference.cache
+E:\sdu\adsproj3\TravelTime\obj\Debug\TravelTime.dll
+E:\sdu\adsproj3\TravelTime\obj\Debug\TravelTime.pdb
