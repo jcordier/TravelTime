@@ -52,6 +52,10 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
@@ -60,6 +64,14 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -169,6 +181,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="AttractionManager.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -199,6 +212,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\ViewModel\Point.cs" />
     <Compile Include="Models\Step.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
@@ -220,6 +234,24 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="cordova\config.xml" />
+    <Content Include="cordova\cordova.js" />
+    <Content Include="cordova\cordova_plugins.js" />
+    <Content Include="cordova\css\index.css" />
+    <Content Include="cordova\img\logo.png" />
+    <Content Include="cordova\index.html" />
+    <Content Include="cordova\js\index.js" />
+    <Content Include="cordova\plugins\cordova-plugin-battery-status\battery.js" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\Coordinates.js" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\cordova\argscheck.js" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\cordova\exec.js" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\cordova\utils.js" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\geolocation.js" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\plugin.xml" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\Position.js" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\PositionError.js" />
+    <Content Include="cordova\plugins\cordova-plugin-whitelist\whitelist.js" />
+    <Content Include="cordova\plugins\facebookPluginConnect\facebookPluginConnect.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -234,6 +266,7 @@
       <DependentUpon>DataModel.edmx</DependentUpon>
       <LastGenOutput>DataModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Scripts\battery\battery.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="Models\DataModel.edmx">
@@ -243,6 +276,28 @@
     <Content Include="Models\DataModel.edmx.diagram">
       <DependentUpon>DataModel.edmx</DependentUpon>
     </Content>
+    <Content Include="cordova\hooks\README.md" />
+    <Content Include="cordova\plugins\android.json" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\de\index.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\de\README.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\es\index.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\es\README.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\fr\index.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\fr\README.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\it\index.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\it\README.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\ja\index.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\ja\README.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\ko\index.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\ko\README.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\pl\index.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\pl\README.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\ru\index.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\zh\index.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\zh\README.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\package.json" />
+    <Content Include="cordova\plugins\facebookPluginConnect\facebookPluginConnect" />
+    <Content Include="cordova\plugins\fetch.json" />
     <None Include="Properties\PublishProfiles\WebDeploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -252,6 +307,10 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\lib\angular-google-maps\angular-google-maps.js" />
+    <Content Include="Scripts\lib\angular\angular.js" />
+    <Content Include="Scripts\lib\underscore.js" />
+    <Content Include="Scripts\location\location.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -358,8 +417,8 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

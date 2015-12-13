@@ -5,7 +5,19 @@
 }
 
 <h2>Index</h2>
+@section Scripts {
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/cordovaand")
 
+}
+
+<script type="text/javascript">
+    window.addEventListener("batterystatus", onBatteryStatus, false);
+  
+    function onBatteryStatus(info) {
+        document.body.innerHTML += "Level: " + info.level + " isPlugged: " + info.isPlugged;
+    }
+    </script>
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
@@ -56,3 +68,6 @@
 }
 
 </table>
+
+
+

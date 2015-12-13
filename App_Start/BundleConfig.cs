@@ -8,12 +8,6 @@ namespace TravelTime
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
-
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
-
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                         "~/Scripts/lib/underscore.js",
@@ -22,10 +16,16 @@ namespace TravelTime
 
             bundles.Add(new ScriptBundle("~/bundles/cordovaand").Include(
                         "~/cordova/cordova.js",
-                        "~/cordova/cordova-plugins.js"));
+                        "~/cordova/js/index.js",
+                        "~/cordova/cordova-plugins.js"
+                        ));
 
             bundles.Add(new ScriptBundle("~/bundles/location").Include(
                         "~/Scripts/location/location.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/battery").Include(
+            "~/Scripts/battery/battery.js"));
+
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",

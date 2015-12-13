@@ -1,75 +1,144 @@
 ﻿var app = angular.module('map', ['uiGmapgoogle-maps']);
 
-app.controller('mapController', ['$scope', 'uiGmapGoogleMapApi', function ($scope, uiGmapGoogleMapApi) {
+app.controller('mapController', ['$scope', 'uiGmapGoogleMapApi', '$http', '$q', '$timeout', function ($scope, uiGmapGoogleMapApi, $http, $q, $timeout) {
+              
 
+    $scope.trip = [];
+    $scope.walk = [];
+    $scope.user = [];
+    $scope.activity = "?";
+    $scope.closest = "";
+
+    var pathPoints = [];
+    var markerPoints = [];
+
+    var lat1, lat2, lng1, lng2, t1, t2;
+
+    t1 = new Date().getTime();
+
+    t2 = new Date().getTime();
+
+    var params = getQueryParams(location.href);
+    var watchPos = true;
     // onSuccess Callback
     // This method accepts a Position object, which contains the
     // current GPS coordinates
     //
-    alert("hi");
-    var walkCoordinates = [];
+
+    if (localStorage.getItem("wc" + params["tripId"] + params["Date"])) {
+        $scope.walkCoordinates = JSON.parse(localStorage.getItem("wc" + params["tripId"] + params["Date"]));
+    }
+    else {
+        $scope.walkCoordinates = [];
+    }
+
+    console.log($scope.walkCoordinates);
     var onSuccess = function (position) {
 
         uiGmapGoogleMapApi.then(function (mapsApi) {
             google.maps = mapsApi;
-        });
+            $scope.map = {
+                center: { latitude: position.coords.latitude, longitude: position.coords.longitude },
+                zoom: 12
+            };
 
-        alert('Latitude: ' + position.coords.latitude + '\n' +
-              'Longitude: ' + position.coords.longitude + '\n' +
-              'Altitude: ' + position.coords.altitude + '\n' +
-              'Accuracy: ' + position.coords.accuracy + '\n' +
-              'Altitude Accuracy: ' + position.coords.altitudeAccuracy + '\n' +
-              'Heading: ' + position.coords.heading + '\n' +
-              'Speed: ' + position.coords.speed + '\n' +
-              'Timestamp: ' + position.timestamp + '\n');
+            $scope.path = [{
+                "latitude": 55.391682,
+                "longitude": 10.382157
+            }];
 
-        $scope.map = {
-            center: { latitude: position.coords.latitude, longitude: position.coords.longitude },
-            zoom: 12,
-            trip: [
-                {
-                  "id": 1,
-                  "path": [
-                    {
-                        "latitude": 55.398584,
-                        "longitude": 10.390258
-                    },
-                    {
-                        "latitude": 55.391682,
-                        "longitude": 10.382157
-                    }
-                  ],
-                  "stroke": {
-                      "color": "#6060FB",
-                      "weight": 3
-                  },
-                  "geodesic": true,
-                  "visible": true
-              }]
-        };
-
-        $scope.markers = [
-            { 
+            $scope.markers = [{
                 id: 1,
                 latitude: 55.398584,
                 longitude: 10.390258,
                 map: $scope.map,
-                title: "HCA huset" 
-            },
-            {
-                id: 2,
-                latitude: 55.391682,
-                longitude: 10.382157,
-                map: $scope.map,
-                title: "Munke Mose"
+            }];
+
+            lat2 = lat1 = position.coords.latitude;
+            lng2 = lng1 = position.coords.longitude;
+
+        getStepsAsPoints(params).then(
+            function (data) {
+                for (var i = 0; i < data["pts"].length; i++) {
+
+                    pathPoints.push({
+                        latitude : data["pts"][i][1],
+                        longitude : data["pts"][i][2]
+                    });
+                    
+                    markerPoints.push({
+                        id : i,
+                        latitude : data["pts"][i][1],
+                        longitude: data["pts"][i][2],
+                        map: $scope.map,
+                        title: data["tts"][i]
+                    });
+                }
+                $scope.markers = markerPoints;
+
+
+                $scope.trip = [
+                        {
+                            "id": 1,
+                            "path": pathPoints,
+                            "stroke": {
+                                "color": "#6060FB",
+                                "weight": 3
+                            },
+                            "geodesic": true,
+                            "visible": true
+                        }];
+
+                $scope.walk = [
+                {
+                    "id": 1,
+                    "path": $scope.walkCoordinates,
+                    "stroke": {
+                        "color": "#60FBFB",
+                        "weight": 3
+                    },
+                    "geodesic": true,
+                    "visible": true
+                }];
+
+
+                navigator.geolocation.watchPosition(onSuccessWatch, onError, { timeout: 30000 });
+
             }
-        ];
+            );
+        });
     };
 
     var onSuccessWatch = function (position) {
-        
-        $scope.position = position.coords.latitude + " " + position.coords.longitude;
-        console.log($scope.position);
+
+            t1 = t2;
+
+            t2 = new Date();
+            t2 = t2.getTime();
+
+            lat1 = lat2;
+            lng1 = lng2;
+
+            lat2 = position.coords.latitude;
+            lng2 = position.coords.longitude;
+            var deltat = (t2 - t1) / 1000;
+
+            var speed = (getDistance(lat1, lat2, lng1, lng2) / 1000) / (deltat / 3600);
+            console.log(speed);
+            
+            if (speed < 1) { $scope.activity = "still"; }
+            if (speed < 8 && speed >= 1) { $scope.activity = "walk"; }
+            if (speed >= 8) { $scope.activity = "ride/run"; }
+
+            var stepDistance = getDistance(markerPoints[0]["latitude"], position.coords.latitude, markerPoints[0]["latitude"], position.coords.longitude);
+            $scope.closest = markerPoints[0]["title"];
+
+            for(var i=0; i< markerPoints.length; i++){
+                if (getDistance(markerPoints[i]["latitude"], position.coords.latitude, markerPoints[i]["latitude"], position.coords.longitude) < stepDistance) {
+                    $scope.closest = markerPoints[i]["title"];
+                }
+            }
+
 
         $scope.user = [
             {
@@ -81,132 +150,75 @@ app.controller('mapController', ['$scope', 'uiGmapGoogleMapApi', function ($scop
             }];
 
 
-        walkCoordinates.push({ "latitude": position.coords.latitude, "longitude": position.coords.longitude });
+        $scope.walkCoordinates.push({ "latitude": position.coords.latitude, "longitude": position.coords.longitude });
 
-        $scope.map.walk = [
-                {
-                    "id": 1,
-                    "path": walkCoordinates,
-                    "stroke": {
-                        "color": "#60FBFB",
-                        "weight": 3
-                    },
-                    "geodesic": true,
-                    "visible": true
-                }]
     };
+    
+    $scope.saveWalkPath = function () {
+        localStorage.setItem("wc" + params["tripId"] + params["Date"], JSON.stringify($scope.walkCoordinates));
+        console.log(localStorage.getItem("wc" + params["tripId"] + params["Date"]));
+        console.log(JSON.parse(localStorage.getItem("wc" + params["tripId"] + params["Date"])));
+    console.log("path saved");
+    }
 
-    // onError Callback receives a PositionError object
-    //
     function onError(error) {
         alert('code: ' + error.code + '\n' +
               'message: ' + error.message + '\n');
     }
 
 
-    navigator.geolocation.getCurrentPosition(onSuccess, onError);
-    navigator.geolocation.watchPosition(onSuccessWatch, onError, { timeout: 30000 });
+    function getStepsAsPoints(params) {
+        var deferred = $q.defer();
+        $http({
+            url: '/Trip/Points',
+            method: 'GET',
+            params: {
+                Date: params["Date"],
+                tripId: params["tripId"]
+            }
+        }).success(
+        function (result) {
 
+            deferred.resolve(JSON.parse(result));
+        }).error(
+        deferred.reject
+        );
+        return deferred.promise;
+    }
+
+
+    
+    navigator.geolocation.getCurrentPosition(onSuccess, onError);
 }]);
 
+function getQueryParams(qs) {
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for (var i = 0; i < hashes.length; i++) {
+        hash = hashes[i].split('=');
+        vars[hash[0]] = decodeURIComponent(hash[1]);
+    }
+    return vars;
+}
 
+function getDistance(lat1, lat2, lng1, lng2) {
 
+    var R = 6371000; // metres
+    var φ1 = lat1.toRadians();
+    var φ2 = lat2.toRadians();
+    var Δφ = (lat2 - lat1).toRadians();
+    var Δλ = (lng2 - lng1).toRadians();
 
-//app.directive('mapd', ['uiGmapGoogleMapApi', '$interval', function (uiGoogleMapsApi, $interval) {
+    var a = Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
+            Math.cos(φ1) * Math.cos(φ2) *
+            Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
+    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 
-//    var google = { maps: null };
-//    var map = null;
+    var d = R * c;
+    return d;
+}
 
-//    return {
-//        restrict: 'E',
-//        scope: {
-//            control: '=',
-//            center: '='
-//        },
-//       link: link
-//    };
+Number.prototype.toRadians = function () {
+        return this * Math.PI / 180;
+    }
 
-
-
-//    function link(scope, $element, attrs) {
-//        // Wait for Google Maps script to load
-//        uiGoogleMapsApi.then(function (mapsApi) {
-//            // Restore google namespace for code compatibility
-//            google.maps = mapsApi;
-//            scope.center = {
-//                lat: 55.371667,
-//                lng: 10.420035
-//            }
-//            if (!scope.center || !scope.center.lat || !scope.center.lng) {
-//                return console.error('position failure');
-//            }
-
-//            map = createMap($element[0], scope.center);
-
-//            drawUser(scope.center);
-
-
-//            var controlApi = scope.control || {};
-//            controlApi.updateUserPosition = updateUserPosition;
-
-
-//            if (controlApi.initCallback) {
-//                controlApi.initCallback();
-//            }
-
-//        });
-//    }
-
-
-
-//    function createMap(domElement, centerCoords) {
-//        var position = new google.maps.LatLng(centerCoords.lat, centerCoords.lng);
-
-//        var mapOptions = {
-//            zoom: 14,
-//            center: position,
-//            mapTypeControl: false,
-//            streetViewControl: false,
-//            rotateControl: false,
-//            //zoomControl: false,
-//            noClear: true
-//            // noClear: boolean	- If true, do not clear the contents of the Map div.
-//        };
-
-//        return new google.maps.Map(domElement, mapOptions);
-//    }
-
-
-
-//    function drawUser(centerCoords) {
-//        var position = new google.maps.LatLng(centerCoords.lat, centerCoords.lng);
-
-//        var markerOptions = {
-//            position: position,
-//            map: map
-//        };
-
-//        var marker = new google.maps.Marker();
-
-//        userMarker = {
-//            marker: marker
-//        };
-//    }
-
-
-
-//    function updateUserPosition(coords) {
-//        console.log('new position', coords);
-//        var position = new google.maps.LatLng(coords.lat, coords.lng);
-
-//        userMrk.marker.setPosition(position);
-//        if (followUser) {
-//            map.panTo(position);
-//        }
-//    }
-
-
-//            return options;
-//        }
-    
-//}]);
