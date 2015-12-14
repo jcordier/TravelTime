@@ -6,7 +6,7 @@
     }
 
     <h2>Index</h2>
-    @Html.ActionLink("Back", "Index", new { id = 3 })
+    @Html.ActionLink("Back", "IndexFromDay", new { id = @Model.ToList()[0].TripId })
     <table class="table">
         <tr>
             <th>
