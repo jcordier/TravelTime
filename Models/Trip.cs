@@ -11,7 +11,8 @@ namespace TravelTime.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Trip
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -23,7 +24,13 @@ namespace TravelTime.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string City { get; set; }
+
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}",
+               ApplyFormatInEditMode = true)]
         public Nullable<System.DateTime> Beginning { get; set; }
+
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}",
+               ApplyFormatInEditMode = true)]
         public Nullable<System.DateTime> End { get; set; }
         public Nullable<int> UserId { get; set; }
     

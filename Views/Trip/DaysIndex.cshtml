@@ -22,7 +22,7 @@
                     @Html.DisplayFor(modelItem => item.Date)
                 </td>
                 <td>
-                    @Html.ActionLink("Plan Day", "Day", new { Date = item.Date, tripId = item.TripId })
+                    @Html.ActionLink("Details", "Day", new { Date = item.Date, tripId = item.TripId })
                 </td>
             </tr>
         }

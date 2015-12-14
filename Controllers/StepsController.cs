@@ -170,6 +170,12 @@ namespace TravelTime.Controllers
             return RedirectToAction("Index", "Trip", new { id = trip.UserId });
         }
 
+        public ActionResult Day(DateTime? date, int? tripId)
+        {
+            return RedirectToAction("Day", "Trip", new { date = date, tripId = tripId });
+        }
+
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

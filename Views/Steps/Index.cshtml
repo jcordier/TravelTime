@@ -10,20 +10,6 @@
     @Html.ActionLink("Back", "TripIndex", new { tripId = Model.tripId })
 </p>
 <table class="table">
-    <tr>
-        <th></th>
-        <th>
-            Name
-        </th>
-        <th>
-            Description
-        </th>
-        <th>
-            Categories
-        </th>
-        <th>
-        </th>
-    </tr>
 @using (Html.BeginForm())
 {
     <tr>
@@ -31,13 +17,9 @@
             <img src="" width="80 px" id="pic"/>
         </td>
         <td>
-            @Html.DropDownListFor(model => model.selectedAttraction, (SelectList)ViewBag.selectedAttraction)
-        </td>
-        <td id="des">
-        </td>
-        <td id="cat">
-        </td>
-        <td>
+            @Html.DropDownListFor(model => model.selectedAttraction, (SelectList)ViewBag.selectedAttraction)<br />
+        <span id="des"><br />
+        </span><br />
             <button type="submit" class="btn btn-default">Add</button>
         </td>
     </tr>
@@ -47,16 +29,10 @@
         <td>
             <img src="@item.Attraction1.Picture" width="80 px" />
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Attraction1.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Attraction1.Categorie)
-        </td>
-        <td>
+        <td >
+            @Html.DisplayFor(modelItem => item.Name) - 
+            @Html.DisplayFor(modelItem => item.Attraction1.Categorie)<br />
+            @Html.DisplayFor(modelItem => item.Attraction1.Description)<br />
             @Html.ActionLink("Details", "Details", new {id=item.Id}) |
             @Html.ActionLink("Delete", "Delete", new {id=item.Id})
         </td>
@@ -84,8 +60,7 @@
                     var pic = data.Picture;
                     var cat = data.Categorie;
                     $('#des')[0].innerHTML = des;
-                    $('#pic')[0].src = pic;
-                    $('#cat')[0].innerHTML = cat;})
+                    $('#pic')[0].src = pic;})
 
               $("#selectedAttraction").change(function () {
                   var name = $("#selectedAttraction :selected")[0].value;  //if user select the tournament
@@ -97,7 +72,6 @@
                         var cat = data.Categorie;
                         $('#des')[0].innerHTML = des;
                         $('#pic')[0].src = pic;
-                        $('#cat')[0].innerHTML = cat;
                     })
            });
         });
