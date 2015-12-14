@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -8,6 +9,7 @@ using System.Net;
 using System.Threading;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Script.Serialization;
 using TravelTime.Models;
 
 namespace TravelTime.Controllers
@@ -104,6 +106,45 @@ namespace TravelTime.Controllers
             day.Date = System.Convert.ToDateTime(date);
             
             return View(day);
+        }
+
+
+        // GET: Trip/Points/5
+        public ActionResult Points(DateTime? date, int? tripId)
+        {
+
+            if (tripId == null)
+            {
+                return new JsonResult { Data = new { valid = false } };
+            }
+            Trip trip = db.Trip.Find(tripId);
+            if (trip == null)
+            {
+                return new JsonResult { Data = new { valid = false } };
+            }
+
+            var step = db.Step
+                .Where(s => s.TripId == tripId)
+                .Where(s => ((DateTime)s.Time).Day == ((DateTime)date).Day)
+                .Where(s => ((DateTime)s.Time).Month == ((DateTime)date).Month)
+                .Where(s => ((DateTime)s.Time).Year == ((DateTime)date).Year)
+                .Include(s => s.Attraction1);
+
+            List<Double?[]> points = new List<Double?[]>();
+            List<String> titles = new List<String>();
+            
+
+            foreach (Step s in step.OrderBy(o => o.Time))
+            {
+                double?[] point = { s.Id, s.Latitude, s.Longitude };
+                points.Add(point);
+                titles.Add(s.Name);
+            }
+
+            return Json(JsonConvert.SerializeObject(new { pts = points,
+            tts = titles,
+            tid = tripId,
+            dt = date}), JsonRequestBehavior.AllowGet);
         }
 
         // GET: Trip/Details/5
