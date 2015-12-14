@@ -1,45 +1,46 @@
 ﻿@model TravelTime.Models.Step
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = @Html.DisplayFor(model => model.Name);
 }
 
-<h2>Details</h2>
+<h2>@Html.DisplayFor(model => model.Name)</h2>
 
 <div>
-    <h4>Step</h4>
+    <h4>@Html.DisplayFor(model => model.Time)</h4>
+    <p>
+        @Html.ActionLink("Back", "Day", new { Date = Model.Time, tripId = Model.TripId })
+    </p>
     <hr />
-    <dl class="dl-horizontal">
-        <img src="@Model.Attraction1.Picture" width="100 px" style="margin:auto;text-align:center"/>"/>
-        <dt>
-            @Html.DisplayFor(model => model.Time)
-        </dt>
+    <dl class="dl-horizontal" style="margin:auto;text-align:center">
+        <img src="@Model.Attraction1.Picture" width="120 px" />
+        <br />
+        @Html.DisplayFor(model => model.Attraction1.Address)
+        @Html.DisplayFor(model => model.Attraction1.City)
+        <br />
+        @Html.DisplayFor(model => model.Attraction1.Categorie)
+        <br />
+        @Html.DisplayFor(model => model.Attraction1.Description)
+        <br />
+        @if (Model.Attraction1.Contact != null)
+        {
+            <div>
+                @Html.DisplayNameFor(model => model.Attraction1.Contact) :
+                @Html.DisplayFor(model => model.Attraction1.Contact)
+            </div>
+            
+        }
+        @if (Model.Attraction1.Opening != null)
+        {
+         <div>
+            @Html.DisplayNameFor(model => model.Attraction1.Opening) :
+            @Html.DisplayFor(model => model.Attraction1.Opening)
+        </div>
+        }
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Attraction1.City)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Attraction1.City)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Attraction1.Description)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Attraction1.Description)
-        </dd>
 
-        
-
-        
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+        </dl>
+        </div>
