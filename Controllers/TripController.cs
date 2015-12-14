@@ -22,8 +22,9 @@ namespace TravelTime.Controllers
         {
             try
             {
-                var user = db.User.Find(System.Convert.ToInt64(id));
-                List<Trip> result = user.Trip.ToList();
+                TripIndexViewModel result = new TripIndexViewModel();
+                result.User = db.User.Find(System.Convert.ToInt64(id));
+                result.Trips = result.User.Trip.ToList();
                 return View(result);
             }
             catch(Exception e)
@@ -121,9 +122,11 @@ namespace TravelTime.Controllers
         }
 
         // GET: Trip/Create
-        public ActionResult Create()
+        public ActionResult Create(int userId)
         {
-            return View();
+            Trip t = new Trip();
+            t.UserId = userId;
+            return View(t);
         }
 
         // POST: Trip/Create
@@ -131,7 +134,7 @@ namespace TravelTime.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,City,Beginning,End,UserId")] Trip trip)
+        public ActionResult Create(Trip trip)
         {
             if (ModelState.IsValid)
             {
@@ -190,6 +193,12 @@ namespace TravelTime.Controllers
                 return HttpNotFound();
             }
             return View(trip);
+        }
+
+        // GET: Trip/Location
+        public ActionResult Location(int? id)
+        {
+            return View();
         }
 
         // POST: Trip/Delete/5
