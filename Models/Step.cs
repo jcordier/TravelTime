@@ -11,7 +11,8 @@ namespace TravelTime.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Step
     {
         public Step()
@@ -29,6 +30,9 @@ namespace TravelTime.Models
 
         public int Id { get; set; }
         public string Name { get; set; }
+
+        [DisplayFormat(DataFormatString = "{0:hh:mm}",
+               ApplyFormatInEditMode = true)]
         public Nullable<System.DateTime> Time { get; set; }
         public int TripId { get; set; }
         public Nullable<int> Attraction { get; set; }
