@@ -14,10 +14,18 @@ namespace TravelTime
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+                        "~/Scripts/lib/underscore.js",
+                        "~/Scripts/lib/angular/angular.js",
+                        "~/Scripts/lib/angular-google-maps/angular-google-maps.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/cordovaand").Include(
+                        "~/cordova/cordova.js",
+                        "~/cordova/cordova-plugins.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/location").Include(
+                        "~/Scripts/location/location.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",

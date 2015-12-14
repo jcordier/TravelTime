@@ -214,12 +214,31 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\ViewModel\dayViewModel.cs" />
     <Compile Include="Models\ViewModel\StepIndexViewModel.cs" />
+    <Compile Include="Models\ViewModel\TripIndexViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="cordova\config.xml" />
+    <Content Include="cordova\cordova.js" />
+    <Content Include="cordova\cordova_plugins.js" />
+    <Content Include="cordova\css\index.css" />
+    <Content Include="cordova\img\logo.png" />
+    <Content Include="cordova\index.html" />
+    <Content Include="cordova\js\index.js" />
+    <Content Include="cordova\plugins\cordova-plugin-battery-status\battery.js" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\Coordinates.js" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\cordova\argscheck.js" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\cordova\exec.js" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\cordova\utils.js" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\geolocation.js" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\plugin.xml" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\Position.js" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\PositionError.js" />
+    <Content Include="cordova\plugins\cordova-plugin-whitelist\whitelist.js" />
+    <Content Include="cordova\plugins\facebookPluginConnect\facebookPluginConnect.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -243,6 +262,28 @@
     <Content Include="Models\DataModel.edmx.diagram">
       <DependentUpon>DataModel.edmx</DependentUpon>
     </Content>
+    <Content Include="cordova\hooks\README.md" />
+    <Content Include="cordova\plugins\android.json" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\de\index.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\de\README.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\es\index.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\es\README.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\fr\index.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\fr\README.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\it\index.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\it\README.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\ja\index.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\ja\README.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\ko\index.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\ko\README.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\pl\index.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\pl\README.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\ru\index.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\zh\index.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\doc\zh\README.md" />
+    <Content Include="cordova\plugins\cordova-plugin-geolocation\package.json" />
+    <Content Include="cordova\plugins\facebookPluginConnect\facebookPluginConnect" />
+    <Content Include="cordova\plugins\fetch.json" />
     <None Include="Properties\PublishProfiles\WebDeploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
