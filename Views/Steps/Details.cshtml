@@ -10,8 +10,9 @@
     <h4>Step</h4>
     <hr />
     <dl class="dl-horizontal">
+        <img src="@Model.Attraction1.Picture" width="100 px" style="margin:auto;text-align:center"/>"/>
         <dt>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayFor(model => model.Time)
         </dt>
 
         <dd>
@@ -19,53 +20,23 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Position)
+            @Html.DisplayNameFor(model => model.Attraction1.City)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Position)
+            @Html.DisplayFor(model => model.Attraction1.City)
         </dd>
-
         <dt>
-            @Html.DisplayNameFor(model => model.Time)
+            @Html.DisplayNameFor(model => model.Attraction1.Description)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Time)
+            @Html.DisplayFor(model => model.Attraction1.Description)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Comment)
-        </dt>
+        
 
-        <dd>
-            @Html.DisplayFor(model => model.Comment)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Media)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Media)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Attraction1.web_id)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Attraction1.web_id)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Trip.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Trip.Name)
-        </dd>
-
+        
     </dl>
 </div>
 <p>
