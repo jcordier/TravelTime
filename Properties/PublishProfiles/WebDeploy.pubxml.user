@@ -35,73 +35,73 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/13/2015 16:39:06</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
-      <publishTime>09/12/2015 02:27:06</publishTime>
+      <publishTime>12/09/2015 02:27:06</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Core.xml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
-      <publishTime>09/12/2015 02:27:07</publishTime>
+      <publishTime>12/09/2015 02:27:07</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.xml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
-      <publishTime>09/12/2015 02:27:06</publishTime>
+      <publishTime>12/09/2015 02:27:06</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Owin.xml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>09/12/2015 02:27:06</publishTime>
+      <publishTime>12/09/2015 02:27:06</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.dll">
-      <publishTime>09/12/2015 02:27:12</publishTime>
+      <publishTime>12/09/2015 02:27:12</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
-      <publishTime>09/12/2015 02:27:08</publishTime>
+      <publishTime>12/09/2015 02:27:08</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Host.SystemWeb.xml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
-      <publishTime>09/12/2015 02:27:08</publishTime>
+      <publishTime>12/09/2015 02:27:08</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Cookies.xml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.dll">
-      <publishTime>09/12/2015 02:27:09</publishTime>
+      <publishTime>12/09/2015 02:27:09</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
-      <publishTime>09/12/2015 02:27:09</publishTime>
+      <publishTime>12/09/2015 02:27:09</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Facebook.xml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Google.dll">
-      <publishTime>09/12/2015 02:27:09</publishTime>
+      <publishTime>12/09/2015 02:27:09</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Google.xml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
-      <publishTime>09/12/2015 02:27:11</publishTime>
+      <publishTime>12/09/2015 02:27:11</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.xml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
-      <publishTime>09/12/2015 02:27:09</publishTime>
+      <publishTime>12/09/2015 02:27:09</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.OAuth.xml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
-      <publishTime>09/12/2015 02:27:11</publishTime>
+      <publishTime>12/09/2015 02:27:11</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Twitter.xml">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -113,7 +113,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>09/12/2015 02:27:09</publishTime>
+      <publishTime>12/09/2015 02:27:09</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>12/12/2015 09:28:16</publishTime>
@@ -122,103 +122,247 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Owin.dll">
-      <publishTime>09/12/2015 02:27:13</publishTime>
+      <publishTime>12/09/2015 02:27:13</publishTime>
+    </File>
+    <File Include="bin/roslyn/Antlr3.Runtime.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
-      <publishTime>04/11/2015 12:05:20</publishTime>
+      <publishTime>12/13/2015 18:36:45</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe.config">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 18:36:45</publishTime>
     </File>
     <File Include="bin/roslyn/csc.rsp">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 18:36:45</publishTime>
     </File>
     <File Include="bin/roslyn/csi.rsp">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 18:36:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/EntityFramework.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/EntityFramework.SqlServer.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/EntityFramework.SqlServer.xml">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/EntityFramework.xml">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.AspNet.Identity.Core.xml">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.AspNet.Identity.EntityFramework.xml">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.AspNet.Identity.Owin.xml">
+      <publishTime>12/13/2015 21:36:21</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
-      <publishTime>04/11/2015 12:05:20</publishTime>
+      <publishTime>12/13/2015 18:36:50</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
-      <publishTime>04/11/2015 12:05:20</publishTime>
+      <publishTime>12/13/2015 18:36:51</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 18:36:52</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
-      <publishTime>11/04/2015 12:05:20</publishTime>
+      <publishTime>12/13/2015 18:36:52</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 18:36:52</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
-      <publishTime>04/11/2015 12:05:21</publishTime>
+      <publishTime>12/13/2015 18:36:53</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml">
+      <publishTime>12/13/2015 21:36:21</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
-      <publishTime>04/11/2015 12:05:21</publishTime>
+      <publishTime>12/13/2015 18:36:53</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 18:36:53</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 18:36:53</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Owin.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Owin.Host.SystemWeb.xml">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Owin.Security.Cookies.xml">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Owin.Security.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Owin.Security.Facebook.xml">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Owin.Security.Google.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Owin.Security.Google.xml">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Owin.Security.MicrosoftAccount.xml">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Owin.Security.OAuth.xml">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Owin.Security.Twitter.xml">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Owin.Security.xml">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Owin.xml">
+      <publishTime>12/13/2015 21:36:21</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
-      <publishTime>04/11/2015 12:05:21</publishTime>
+      <publishTime>12/13/2015 18:36:53</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Web.Infrastructure.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Newtonsoft.Json.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Newtonsoft.Json.xml">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Owin.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
     </File>
     <File Include="bin/roslyn/System.AppContext.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 18:36:53</publishTime>
     </File>
     <File Include="bin/roslyn/System.Collections.Immutable.dll">
-      <publishTime>04/11/2015 12:05:21</publishTime>
+      <publishTime>12/13/2015 18:36:53</publishTime>
     </File>
     <File Include="bin/roslyn/System.Console.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 18:36:53</publishTime>
     </File>
     <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 18:36:53</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.FileSystem.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 18:36:54</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 18:36:54</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.Formatting.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
     </File>
     <File Include="bin/roslyn/System.Reflection.Metadata.dll">
-      <publishTime>11/04/2015 12:05:21</publishTime>
+      <publishTime>12/13/2015 18:36:54</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Web.Helpers.dll">
+      <publishTime>12/13/2015 21:36:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Web.Http.dll">
+      <publishTime>12/13/2015 21:36:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Web.Http.WebHost.dll">
+      <publishTime>12/13/2015 21:36:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Web.Mvc.dll">
+      <publishTime>12/13/2015 21:36:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Web.Optimization.dll">
+      <publishTime>12/13/2015 21:36:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Web.Razor.dll">
+      <publishTime>12/13/2015 21:36:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Web.WebPages.Deployment.dll">
+      <publishTime>12/13/2015 21:36:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Web.WebPages.dll">
+      <publishTime>12/13/2015 21:36:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Web.WebPages.Razor.dll">
+      <publishTime>12/13/2015 21:36:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/TravelTime.dll">
+      <publishTime>12/13/2015 21:36:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/TravelTime.dll.config">
+      <publishTime>12/13/2015 21:36:22</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe">
-      <publishTime>04/11/2015 12:05:21</publishTime>
+      <publishTime>12/13/2015 18:36:54</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe.config">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 18:36:54</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.rsp">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 18:36:54</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe">
-      <publishTime>11/04/2015 12:05:21</publishTime>
+      <publishTime>12/13/2015 18:36:54</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe.config">
-      <publishTime>04/11/2015 12:05:21</publishTime>
+      <publishTime>12/13/2015 18:36:54</publishTime>
+    </File>
+    <File Include="bin/roslyn/WebGrease.dll">
+      <publishTime>12/13/2015 21:36:22</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
-      <publishTime>12/12/2015 15:58:00</publishTime>
+      <publishTime>12/13/2015 21:36:21</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.xml">
       <publishTime>12/12/2015 15:58:01</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
-      <publishTime>09/12/2015 02:27:07</publishTime>
+      <publishTime>12/13/2015 21:36:21</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.xml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/System.Web.Http.dll">
-      <publishTime>12/12/2015 15:58:15</publishTime>
+      <publishTime>12/13/2015 21:36:22</publishTime>
     </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
-      <publishTime>12/12/2015 15:58:20</publishTime>
+      <publishTime>12/13/2015 21:36:22</publishTime>
     </File>
     <File Include="bin/System.Web.Http.WebHost.xml">
       <publishTime>12/12/2015 15:58:20</publishTime>
@@ -227,34 +371,34 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/12/2015 15:58:15</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
-      <publishTime>09/12/2015 02:27:07</publishTime>
+      <publishTime>12/13/2015 21:36:22</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.xml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
-      <publishTime>09/12/2015 02:27:06</publishTime>
+      <publishTime>12/13/2015 21:36:22</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.xml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
-      <publishTime>09/12/2015 02:27:07</publishTime>
+      <publishTime>12/13/2015 21:36:22</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.xml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Deployment.dll">
-      <publishTime>09/12/2015 02:27:07</publishTime>
+      <publishTime>12/13/2015 21:36:22</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Deployment.xml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.dll">
-      <publishTime>09/12/2015 02:27:07</publishTime>
+      <publishTime>12/13/2015 21:36:22</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Razor.dll">
-      <publishTime>09/12/2015 02:27:07</publishTime>
+      <publishTime>12/13/2015 21:36:22</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Razor.xml">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -263,25 +407,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/TravelTime.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 21:39:18</publishTime>
     </File>
     <File Include="bin/TravelTime.dll.config">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 16:39:07</publishTime>
     </File>
     <File Include="bin/TravelTime.pdb">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
-      <publishTime>09/12/2015 02:27:10</publishTime>
+      <publishTime>12/13/2015 21:36:22</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
-      <publishTime>11/12/2015 19:06:46</publishTime>
+      <publishTime>12/11/2015 19:06:46</publishTime>
     </File>
     <File Include="Content/bootstrap.min.css">
-      <publishTime>11/12/2015 19:06:46</publishTime>
+      <publishTime>12/11/2015 19:06:46</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>11/12/2015 20:16:33</publishTime>
+      <publishTime>12/11/2015 20:16:33</publishTime>
     </File>
     <File Include="Controllers/AccountController.cs">
       <publishTime>04/11/2015 12:05:09</publishTime>
@@ -302,145 +446,145 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="cordova/config.xml">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/cordova.js">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 02:06:31</publishTime>
     </File>
     <File Include="cordova/cordova_plugins.js">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 02:10:29</publishTime>
     </File>
     <File Include="cordova/css/index.css">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/hooks/README.md">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/img/logo.png">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/index.html">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/js/index.js">
       <publishTime>12/12/2015 14:10:43</publishTime>
     </File>
     <File Include="cordova/plugins/android.json">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-battery-status/battery.js">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/Coordinates.js">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/cordova/argscheck.js">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/cordova/exec.js">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/cordova/utils.js">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/doc/de/index.md">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/doc/de/README.md">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/doc/es/index.md">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/doc/es/README.md">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/doc/fr/index.md">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/doc/fr/README.md">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/doc/it/index.md">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/doc/it/README.md">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/doc/ja/index.md">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/doc/ja/README.md">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/doc/ko/index.md">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/doc/ko/README.md">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/doc/pl/index.md">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/doc/pl/README.md">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/doc/ru/index.md">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/doc/zh/index.md">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/doc/zh/README.md">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/geolocation.js">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/package.json">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/plugin.xml">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/Position.js">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-geolocation/PositionError.js">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/cordova-plugin-whitelist/whitelist.js">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/facebookPluginConnect/facebookPluginConnect">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/facebookPluginConnect/facebookPluginConnect.js">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="cordova/plugins/fetch.json">
-      <publishTime>11/12/2015 19:55:25</publishTime>
+      <publishTime>12/11/2015 19:55:25</publishTime>
     </File>
     <File Include="favicon.ico">
-      <publishTime>11/12/2015 19:06:52</publishTime>
+      <publishTime>12/11/2015 19:06:52</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
-      <publishTime>11/12/2015 19:06:53</publishTime>
+      <publishTime>12/11/2015 19:06:53</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.svg">
-      <publishTime>11/12/2015 19:06:53</publishTime>
+      <publishTime>12/11/2015 19:06:53</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.ttf">
-      <publishTime>11/12/2015 19:06:53</publishTime>
+      <publishTime>12/11/2015 19:06:53</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.woff">
-      <publishTime>11/12/2015 19:06:53</publishTime>
+      <publishTime>12/11/2015 19:06:53</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>11/12/2015 19:06:47</publishTime>
+      <publishTime>12/11/2015 19:06:47</publishTime>
     </File>
     <File Include="Models/DataModel.edmx.diagram">
-      <publishTime>11/12/2015 19:06:47</publishTime>
+      <publishTime>12/11/2015 19:06:47</publishTime>
     </File>
     <File Include="Models/Trip.edmx.diagram">
       <publishTime>11/10/2015 19:59:42</publishTime>
@@ -502,191 +646,797 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="packages.config">
       <publishTime>12/12/2015 15:58:21</publishTime>
     </File>
+    <File Include="packages/Antlr.3.4.1.9004/Antlr.3.4.1.9004.nupkg">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Antlr.3.4.1.9004/lib/Antlr3.Runtime.dll">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Antlr.3.4.1.9004/lib/Antlr3.Runtime.pdb">
+      <publishTime>12/09/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/bootstrap.3.0.0/bootstrap.3.0.0.nupkg">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/bootstrap.3.0.0/Content/Content/bootstrap-theme.css">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/bootstrap.3.0.0/Content/Content/bootstrap-theme.min.css">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/bootstrap.3.0.0/Content/Content/bootstrap.css">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/bootstrap.3.0.0/Content/Content/bootstrap.min.css">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/bootstrap.3.0.0/Content/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/bootstrap.3.0.0/Content/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/bootstrap.3.0.0/Content/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/bootstrap.3.0.0/Content/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/bootstrap.3.0.0/Content/Scripts/bootstrap.js">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/bootstrap.3.0.0/Content/Scripts/bootstrap.min.js">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/EntityFramework.6.1.3/content/App.config.transform">
+      <publishTime>09/12/2015 02:27:08</publishTime>
+    </File>
+    <File Include="packages/EntityFramework.6.1.3/content/Web.config.transform">
+      <publishTime>09/12/2015 02:27:08</publishTime>
+    </File>
+    <File Include="packages/EntityFramework.6.1.3/EntityFramework.6.1.3.nupkg">
+      <publishTime>09/12/2015 02:27:17</publishTime>
+    </File>
+    <File Include="packages/EntityFramework.6.1.3/lib/net40/EntityFramework.dll">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/EntityFramework.6.1.3/lib/net40/EntityFramework.SqlServer.dll">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/EntityFramework.6.1.3/lib/net40/EntityFramework.SqlServer.xml">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/EntityFramework.6.1.3/lib/net40/EntityFramework.xml">
+      <publishTime>09/12/2015 02:27:10</publishTime>
+    </File>
+    <File Include="packages/EntityFramework.6.1.3/lib/net45/EntityFramework.dll">
+      <publishTime>09/12/2015 02:27:14</publishTime>
+    </File>
+    <File Include="packages/EntityFramework.6.1.3/lib/net45/EntityFramework.SqlServer.dll">
+      <publishTime>09/12/2015 02:27:14</publishTime>
+    </File>
+    <File Include="packages/EntityFramework.6.1.3/lib/net45/EntityFramework.SqlServer.xml">
+      <publishTime>09/12/2015 02:27:14</publishTime>
+    </File>
+    <File Include="packages/EntityFramework.6.1.3/lib/net45/EntityFramework.xml">
+      <publishTime>09/12/2015 02:27:15</publishTime>
+    </File>
+    <File Include="packages/EntityFramework.6.1.3/tools/about_EntityFramework.help.txt">
+      <publishTime>09/12/2015 02:27:15</publishTime>
+    </File>
+    <File Include="packages/EntityFramework.6.1.3/tools/EntityFramework.PowerShell.dll">
+      <publishTime>09/12/2015 02:27:15</publishTime>
+    </File>
+    <File Include="packages/EntityFramework.6.1.3/tools/EntityFramework.PowerShell.Utility.dll">
+      <publishTime>09/12/2015 02:27:15</publishTime>
+    </File>
+    <File Include="packages/EntityFramework.6.1.3/tools/EntityFramework.psd1">
+      <publishTime>09/12/2015 02:27:15</publishTime>
+    </File>
+    <File Include="packages/EntityFramework.6.1.3/tools/EntityFramework.psm1">
+      <publishTime>09/12/2015 02:27:15</publishTime>
+    </File>
+    <File Include="packages/GitSharp.0.3/GitSharp.0.3.nupkg">
+      <publishTime>10/12/2015 18:29:00</publishTime>
+    </File>
+    <File Include="packages/GitSharp.0.3/lib/GitSharp.Core.dll">
+      <publishTime>10/12/2015 18:29:00</publishTime>
+    </File>
+    <File Include="packages/GitSharp.0.3/lib/GitSharp.dll">
+      <publishTime>10/12/2015 18:29:00</publishTime>
+    </File>
+    <File Include="packages/jQuery.1.10.2/Content/Scripts/jquery-1.10.2-vsdoc.js">
+      <publishTime>12/09/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/jQuery.1.10.2/Content/Scripts/jquery-1.10.2.js">
+      <publishTime>09/12/2015 02:27:08</publishTime>
+    </File>
+    <File Include="packages/jQuery.1.10.2/Content/Scripts/jquery-1.10.2.min.js">
+      <publishTime>09/12/2015 02:27:08</publishTime>
+    </File>
+    <File Include="packages/jQuery.1.10.2/Content/Scripts/jquery-1.10.2.min.map">
+      <publishTime>09/12/2015 02:27:08</publishTime>
+    </File>
+    <File Include="packages/jQuery.1.10.2/jQuery.1.10.2.nupkg">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/jQuery.1.10.2/Tools/jquery-1.10.2.intellisense.js">
+      <publishTime>12/09/2015 02:27:08</publishTime>
+    </File>
+    <File Include="packages/jQuery.Validation.1.11.1/Content/Scripts/jquery.validate-vsdoc.js">
+      <publishTime>12/09/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/jQuery.Validation.1.11.1/Content/Scripts/jquery.validate.js">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/jQuery.Validation.1.11.1/Content/Scripts/jquery.validate.min.js">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/jQuery.Validation.1.11.1/jQuery.Validation.1.11.1.nupkg">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Identity.Core.2.2.1/lib/net45/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Identity.Core.2.2.1/lib/net45/Microsoft.AspNet.Identity.Core.xml">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Identity.Core.2.2.1/Microsoft.AspNet.Identity.Core.2.2.1.nupkg">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Identity.EntityFramework.2.2.1/lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Identity.EntityFramework.2.2.1/lib/net45/Microsoft.AspNet.Identity.EntityFramework.xml">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Identity.EntityFramework.2.2.1/Microsoft.AspNet.Identity.EntityFramework.2.2.1.nupkg">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Identity.Owin.2.2.1/lib/net45/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Identity.Owin.2.2.1/lib/net45/Microsoft.AspNet.Identity.Owin.xml">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Identity.Owin.2.2.1/Microsoft.AspNet.Identity.Owin.2.2.1.nupkg">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Mvc.5.2.3/Content/Web.config.install.xdt">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Mvc.5.2.3/Content/Web.config.uninstall.xdt">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Mvc.5.2.3/lib/net45/System.Web.Mvc.dll">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Mvc.5.2.3/lib/net45/System.Web.Mvc.xml">
+      <publishTime>09/12/2015 02:27:08</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Mvc.5.2.3/Microsoft.AspNet.Mvc.5.2.3.nupkg">
+      <publishTime>09/12/2015 02:27:08</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Razor.3.2.3/lib/net45/System.Web.Razor.dll">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Razor.3.2.3/lib/net45/System.Web.Razor.xml">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Razor.3.2.3/Microsoft.AspNet.Razor.3.2.3.nupkg">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Web.Optimization.1.1.3/lib/net40/System.Web.Optimization.dll">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Web.Optimization.1.1.3/lib/net40/system.web.optimization.xml">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.Web.Optimization.1.1.3/Microsoft.AspNet.Web.Optimization.1.1.3.nupkg">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebApi.5.2.3/Microsoft.AspNet.WebApi.5.2.3.nupkg">
+      <publishTime>12/12/2015 15:58:21</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebApi.Client.5.2.3/lib/net45/System.Net.Http.Formatting.dll">
+      <publishTime>12/12/2015 15:58:00</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebApi.Client.5.2.3/lib/net45/System.Net.Http.Formatting.xml">
+      <publishTime>12/12/2015 15:58:01</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebApi.Client.5.2.3/lib/portable-wp8%252Bnetcore45%252Bnet45%252Bwp81%252Bwpa81/System.Net.Http.Formatting.dll">
+      <publishTime>12/12/2015 15:58:01</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebApi.Client.5.2.3/lib/portable-wp8%252Bnetcore45%252Bnet45%252Bwp81%252Bwpa81/System.Net.Http.Formatting.xml">
+      <publishTime>12/12/2015 15:58:01</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebApi.Client.5.2.3/Microsoft.AspNet.WebApi.Client.5.2.3.nupkg">
+      <publishTime>12/12/2015 15:58:01</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebApi.Core.5.2.3/Content/web.config.transform">
+      <publishTime>12/12/2015 15:58:13</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebApi.Core.5.2.3/lib/net45/System.Web.Http.dll">
+      <publishTime>12/12/2015 15:58:15</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebApi.Core.5.2.3/lib/net45/System.Web.Http.xml">
+      <publishTime>12/12/2015 15:58:15</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebApi.Core.5.2.3/Microsoft.AspNet.WebApi.Core.5.2.3.nupkg">
+      <publishTime>12/12/2015 15:58:16</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebApi.WebHost.5.2.3/lib/net45/System.Web.Http.WebHost.dll">
+      <publishTime>12/12/2015 15:58:20</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebApi.WebHost.5.2.3/lib/net45/System.Web.Http.WebHost.xml">
+      <publishTime>12/12/2015 15:58:20</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebApi.WebHost.5.2.3/Microsoft.AspNet.WebApi.WebHost.5.2.3.nupkg">
+      <publishTime>12/12/2015 15:58:20</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebPages.3.2.3/Content/Web.config.install.xdt">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebPages.3.2.3/Content/Web.config.uninstall.xdt">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebPages.3.2.3/lib/net45/System.Web.Helpers.dll">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebPages.3.2.3/lib/net45/System.Web.Helpers.xml">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebPages.3.2.3/lib/net45/System.Web.WebPages.Deployment.dll">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebPages.3.2.3/lib/net45/System.Web.WebPages.Deployment.xml">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebPages.3.2.3/lib/net45/System.Web.WebPages.dll">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebPages.3.2.3/lib/net45/System.Web.WebPages.Razor.dll">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebPages.3.2.3/lib/net45/System.Web.WebPages.Razor.xml">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebPages.3.2.3/lib/net45/System.Web.WebPages.xml">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.AspNet.WebPages.3.2.3/Microsoft.AspNet.WebPages.3.2.3.nupkg">
+      <publishTime>09/12/2015 02:27:08</publishTime>
+    </File>
+    <File Include="packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0/build/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0/content/web.config.install.xdt">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0/content/web.config.uninstall.xdt">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0/lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0/lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0.nupkg">
+      <publishTime>09/12/2015 02:27:07</publishTime>
+    </File>
+    <File Include="packages/Microsoft.jQuery.Unobtrusive.Validation.3.2.3/Content/Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.jQuery.Unobtrusive.Validation.3.2.3/Content/Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.jQuery.Unobtrusive.Validation.3.2.3/Microsoft.jQuery.Unobtrusive.Validation.3.2.3.nupkg">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.0.0/build/Microsoft.Net.Compilers.props">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.0.0/Microsoft.Net.Compilers.1.0.0.nupkg">
+      <publishTime>09/12/2015 02:27:10</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.0.0/ThirdPartyNotices.rtf">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.0.0/tools/csc.exe">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.0.0/tools/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>09/12/2015 02:27:06</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.0.0/tools/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>09/12/2015 02:27:08</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.0.0/tools/Microsoft.CodeAnalysis.dll">
+      <publishTime>09/12/2015 02:27:08</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.0.0/tools/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.0.0/tools/Microsoft.CSharp.Core.targets">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.0.0/tools/Microsoft.VisualBasic.Core.targets">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.0.0/tools/System.Collections.Immutable.dll">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.0.0/tools/System.Reflection.Metadata.dll">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.0.0/tools/vbc.exe">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.0.0/tools/VBCSCompiler.exe">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.0.0/tools/VBCSCompiler.exe.config">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/build/Microsoft.Net.Compilers.props">
+      <publishTime>11/12/2015 19:29:21</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/Microsoft.Net.Compilers.1.1.1.nupkg">
+      <publishTime>11/12/2015 19:29:23</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/ThirdPartyNotices.rtf">
+      <publishTime>11/12/2015 19:29:21</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/csc.exe">
+      <publishTime>11/12/2015 19:29:21</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/csc.exe.config">
+      <publishTime>11/12/2015 19:29:21</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/csc.rsp">
+      <publishTime>11/12/2015 19:29:21</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/csi.rsp">
+      <publishTime>11/12/2015 19:29:21</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>11/12/2015 19:29:21</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>11/12/2015 19:29:21</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>11/12/2015 19:29:21</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/Microsoft.CodeAnalysis.dll">
+      <publishTime>11/12/2015 19:29:22</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>11/12/2015 19:29:22</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>11/12/2015 19:29:22</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/Microsoft.CSharp.Core.targets">
+      <publishTime>11/12/2015 19:29:22</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>11/12/2015 19:29:22</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>11/12/2015 19:29:22</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/Microsoft.VisualBasic.Core.targets">
+      <publishTime>11/12/2015 19:29:22</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/System.AppContext.dll">
+      <publishTime>11/12/2015 19:29:22</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/System.Collections.Immutable.dll">
+      <publishTime>11/12/2015 19:29:22</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/System.Console.dll">
+      <publishTime>11/12/2015 19:29:22</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/System.Diagnostics.StackTrace.dll">
+      <publishTime>11/12/2015 19:29:23</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/System.IO.FileSystem.dll">
+      <publishTime>11/12/2015 19:29:23</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/System.IO.FileSystem.Primitives.dll">
+      <publishTime>11/12/2015 19:29:23</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/System.Reflection.Metadata.dll">
+      <publishTime>11/12/2015 19:29:23</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/vbc.exe">
+      <publishTime>11/12/2015 19:29:23</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/vbc.exe.config">
+      <publishTime>11/12/2015 19:29:23</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/vbc.rsp">
+      <publishTime>11/12/2015 19:29:23</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/VBCSCompiler.exe">
+      <publishTime>11/12/2015 19:29:23</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Net.Compilers.1.1.1/tools/VBCSCompiler.exe.config">
+      <publishTime>11/12/2015 19:29:23</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.3.0.1/lib/net45/Microsoft.Owin.dll">
+      <publishTime>09/12/2015 02:27:12</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.3.0.1/lib/net45/Microsoft.Owin.XML">
+      <publishTime>09/12/2015 02:27:12</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.3.0.1/Microsoft.Owin.3.0.1.nupkg">
+      <publishTime>09/12/2015 02:27:12</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Host.SystemWeb.3.0.1/lib/net45/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>09/12/2015 02:27:08</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Host.SystemWeb.3.0.1/lib/net45/Microsoft.Owin.Host.SystemWeb.xml">
+      <publishTime>09/12/2015 02:27:08</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Host.SystemWeb.3.0.1/Microsoft.Owin.Host.SystemWeb.3.0.1.nupkg">
+      <publishTime>09/12/2015 02:27:08</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.3.0.1/lib/net45/Microsoft.Owin.Security.dll">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.3.0.1/lib/net45/Microsoft.Owin.Security.XML">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.3.0.1/Microsoft.Owin.Security.3.0.1.nupkg">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.Cookies.3.0.1/lib/net45/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>09/12/2015 02:27:08</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.Cookies.3.0.1/lib/net45/Microsoft.Owin.Security.Cookies.xml">
+      <publishTime>09/12/2015 02:27:08</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.Cookies.3.0.1/Microsoft.Owin.Security.Cookies.3.0.1.nupkg">
+      <publishTime>09/12/2015 02:27:08</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.Facebook.3.0.1/lib/net45/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.Facebook.3.0.1/lib/net45/Microsoft.Owin.Security.Facebook.XML">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.Facebook.3.0.1/Microsoft.Owin.Security.Facebook.3.0.1.nupkg">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.Google.3.0.1/lib/net45/Microsoft.Owin.Security.Google.dll">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.Google.3.0.1/lib/net45/Microsoft.Owin.Security.Google.XML">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.Google.3.0.1/Microsoft.Owin.Security.Google.3.0.1.nupkg">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.MicrosoftAccount.3.0.1/lib/net45/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>09/12/2015 02:27:11</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.MicrosoftAccount.3.0.1/lib/net45/Microsoft.Owin.Security.MicrosoftAccount.XML">
+      <publishTime>09/12/2015 02:27:11</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.MicrosoftAccount.3.0.1/Microsoft.Owin.Security.MicrosoftAccount.3.0.1.nupkg">
+      <publishTime>09/12/2015 02:27:11</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.OAuth.3.0.1/lib/net45/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.OAuth.3.0.1/lib/net45/Microsoft.Owin.Security.OAuth.XML">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.OAuth.3.0.1/Microsoft.Owin.Security.OAuth.3.0.1.nupkg">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.Twitter.3.0.1/lib/net45/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>09/12/2015 02:27:11</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.Twitter.3.0.1/lib/net45/Microsoft.Owin.Security.Twitter.XML">
+      <publishTime>09/12/2015 02:27:11</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Owin.Security.Twitter.3.0.1/Microsoft.Owin.Security.Twitter.3.0.1.nupkg">
+      <publishTime>09/12/2015 02:27:11</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Web.Infrastructure.1.0.0.0/lib/net40/Microsoft.Web.Infrastructure.dll">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Microsoft.Web.Infrastructure.1.0.0.0/Microsoft.Web.Infrastructure.1.0.0.0.nupkg">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Modernizr.2.6.2/Content/Scripts/modernizr-2.6.2.js">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Modernizr.2.6.2/Modernizr.2.6.2.nupkg">
+      <publishTime>09/12/2015 02:27:09</publishTime>
+    </File>
+    <File Include="packages/Newtonsoft.Json.6.0.4/lib/net20/Newtonsoft.Json.dll">
+      <publishTime>09/12/2015 02:27:10</publishTime>
+    </File>
+    <File Include="packages/Newtonsoft.Json.6.0.4/lib/net20/Newtonsoft.Json.xml">
+      <publishTime>09/12/2015 02:27:10</publishTime>
+    </File>
+    <File Include="packages/Newtonsoft.Json.6.0.4/lib/net35/Newtonsoft.Json.dll">
+      <publishTime>09/12/2015 02:27:11</publishTime>
+    </File>
+    <File Include="packages/Newtonsoft.Json.6.0.4/lib/net35/Newtonsoft.Json.xml">
+      <publishTime>09/12/2015 02:27:12</publishTime>
+    </File>
+    <File Include="packages/Newtonsoft.Json.6.0.4/lib/net40/Newtonsoft.Json.dll">
+      <publishTime>09/12/2015 02:27:12</publishTime>
+    </File>
+    <File Include="packages/Newtonsoft.Json.6.0.4/lib/net40/Newtonsoft.Json.xml">
+      <publishTime>09/12/2015 02:27:13</publishTime>
+    </File>
+    <File Include="packages/Newtonsoft.Json.6.0.4/lib/net45/Newtonsoft.Json.dll">
+      <publishTime>09/12/2015 02:27:13</publishTime>
+    </File>
+    <File Include="packages/Newtonsoft.Json.6.0.4/lib/net45/Newtonsoft.Json.xml">
+      <publishTime>09/12/2015 02:27:14</publishTime>
+    </File>
+    <File Include="packages/Newtonsoft.Json.6.0.4/lib/netcore45/Newtonsoft.Json.dll">
+      <publishTime>09/12/2015 02:27:14</publishTime>
+    </File>
+    <File Include="packages/Newtonsoft.Json.6.0.4/lib/netcore45/Newtonsoft.Json.xml">
+      <publishTime>09/12/2015 02:27:14</publishTime>
+    </File>
+    <File Include="packages/Newtonsoft.Json.6.0.4/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll">
+      <publishTime>09/12/2015 02:27:15</publishTime>
+    </File>
+    <File Include="packages/Newtonsoft.Json.6.0.4/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml">
+      <publishTime>09/12/2015 02:27:15</publishTime>
+    </File>
+    <File Include="packages/Newtonsoft.Json.6.0.4/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll">
+      <publishTime>09/12/2015 02:27:15</publishTime>
+    </File>
+    <File Include="packages/Newtonsoft.Json.6.0.4/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml">
+      <publishTime>09/12/2015 02:27:15</publishTime>
+    </File>
+    <File Include="packages/Newtonsoft.Json.6.0.4/Newtonsoft.Json.6.0.4.nupkg">
+      <publishTime>09/12/2015 02:27:16</publishTime>
+    </File>
+    <File Include="packages/Owin.1.0/lib/net40/Owin.dll">
+      <publishTime>09/12/2015 02:27:13</publishTime>
+    </File>
+    <File Include="packages/Owin.1.0/Owin.1.0.nupkg">
+      <publishTime>09/12/2015 02:27:13</publishTime>
+    </File>
+    <File Include="packages/Respond.1.2.0/content/Scripts/respond.js">
+      <publishTime>09/12/2015 02:27:13</publishTime>
+    </File>
+    <File Include="packages/Respond.1.2.0/content/Scripts/respond.min.js">
+      <publishTime>09/12/2015 02:27:13</publishTime>
+    </File>
+    <File Include="packages/Respond.1.2.0/Respond.1.2.0.nupkg">
+      <publishTime>09/12/2015 02:27:13</publishTime>
+    </File>
+    <File Include="packages/SharpZipLib.0.86.0/lib/11/ICSharpCode.SharpZipLib.dll">
+      <publishTime>10/12/2015 18:28:50</publishTime>
+    </File>
+    <File Include="packages/SharpZipLib.0.86.0/lib/20/ICSharpCode.SharpZipLib.dll">
+      <publishTime>10/12/2015 18:28:50</publishTime>
+    </File>
+    <File Include="packages/SharpZipLib.0.86.0/lib/SL3/SharpZipLib.Silverlight3.dll">
+      <publishTime>10/12/2015 18:28:51</publishTime>
+    </File>
+    <File Include="packages/SharpZipLib.0.86.0/lib/SL4/SharpZipLib.Silverlight4.dll">
+      <publishTime>10/12/2015 18:28:51</publishTime>
+    </File>
+    <File Include="packages/SharpZipLib.0.86.0/SharpZipLib.0.86.0.nupkg">
+      <publishTime>10/12/2015 18:28:51</publishTime>
+    </File>
+    <File Include="packages/Tamir.SharpSSH.1.1.1.13/lib/Tamir.SharpSSH.dll">
+      <publishTime>10/12/2015 18:28:55</publishTime>
+    </File>
+    <File Include="packages/Tamir.SharpSSH.1.1.1.13/Tamir.SharpSSH.1.1.1.13.nupkg">
+      <publishTime>10/12/2015 18:28:55</publishTime>
+    </File>
+    <File Include="packages/WebGrease.1.5.2/lib/WebGrease.dll">
+      <publishTime>09/12/2015 02:27:10</publishTime>
+    </File>
+    <File Include="packages/WebGrease.1.5.2/WebGrease.1.5.2.nupkg">
+      <publishTime>09/12/2015 02:27:11</publishTime>
+    </File>
+    <File Include="packages/Winterdom.IO.FileMap.2.0.2.0/lib/Winterdom.IO.FileMap.dll">
+      <publishTime>10/12/2015 18:28:57</publishTime>
+    </File>
+    <File Include="packages/Winterdom.IO.FileMap.2.0.2.0/Winterdom.IO.FileMap.2.0.2.0.nupkg">
+      <publishTime>10/12/2015 18:28:57</publishTime>
+    </File>
     <File Include="Scripts/battery/battery.js">
       <publishTime>12/12/2015 11:04:22</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
-      <publishTime>11/12/2015 19:06:48</publishTime>
+      <publishTime>12/11/2015 19:06:48</publishTime>
     </File>
     <File Include="Scripts/bootstrap.min.js">
-      <publishTime>11/12/2015 19:06:48</publishTime>
+      <publishTime>12/11/2015 19:06:48</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
-      <publishTime>11/12/2015 19:06:48</publishTime>
+      <publishTime>12/11/2015 19:06:48</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.min.js">
-      <publishTime>11/12/2015 19:06:48</publishTime>
+      <publishTime>12/11/2015 19:06:48</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.min.map">
-      <publishTime>11/12/2015 19:06:48</publishTime>
+      <publishTime>12/11/2015 19:06:48</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.js">
-      <publishTime>11/12/2015 19:06:48</publishTime>
+      <publishTime>12/11/2015 19:06:48</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.min.js">
-      <publishTime>11/12/2015 19:06:48</publishTime>
+      <publishTime>12/11/2015 19:06:48</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.unobtrusive.js">
-      <publishTime>11/12/2015 19:06:48</publishTime>
+      <publishTime>12/11/2015 19:06:48</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.unobtrusive.min.js">
-      <publishTime>11/12/2015 19:06:48</publishTime>
+      <publishTime>12/11/2015 19:06:48</publishTime>
     </File>
     <File Include="Scripts/lib/angular-google-maps/angular-google-maps.js">
-      <publishTime>11/12/2015 20:11:33</publishTime>
+      <publishTime>12/11/2015 20:11:33</publishTime>
     </File>
     <File Include="Scripts/lib/angular/angular.js">
-      <publishTime>11/12/2015 20:11:33</publishTime>
+      <publishTime>12/11/2015 20:11:33</publishTime>
     </File>
     <File Include="Scripts/lib/underscore.js">
-      <publishTime>11/12/2015 20:11:34</publishTime>
+      <publishTime>12/11/2015 20:11:34</publishTime>
     </File>
     <File Include="Scripts/location/location.js">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 16:37:14</publishTime>
     </File>
     <File Include="Scripts/modernizr-2.6.2.js">
-      <publishTime>11/12/2015 19:06:48</publishTime>
+      <publishTime>12/11/2015 19:06:48</publishTime>
     </File>
     <File Include="Scripts/respond.js">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Scripts/respond.min.js">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Scripts/_references.js">
-      <publishTime>12/12/2015 11:23:13</publishTime>
+      <publishTime>12/13/2015 19:55:10</publishTime>
     </File>
     <File Include="Views/Account/ConfirmEmail.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Account/ExternalLoginFailure.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Account/ForgotPassword.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Account/ForgotPasswordConfirmation.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Account/Login.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Account/Register.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Account/ResetPassword.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Account/ResetPasswordConfirmation.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Account/SendCode.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Account/VerifyCode.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Home/Contact.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
       <publishTime>12/12/2015 11:29:31</publishTime>
     </File>
     <File Include="Views/Manage/AddPhoneNumber.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Manage/ChangePassword.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Manage/Index.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Manage/ManageLogins.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Manage/SetPassword.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Manage/VerifyPhoneNumber.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Shared/Lockout.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 16:52:28</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Steps/Create.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Steps/Delete.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Steps/Details.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Steps/Edit.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Steps/Index.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Trip/Create.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Trip/Day.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 16:53:19</publishTime>
     </File>
     <File Include="Views/Trip/DaysIndex.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Trip/Delete.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Trip/Details.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Trip/Edit.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Trip/Index.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>12/13/2015 02:03:05</publishTime>
     </File>
     <File Include="Views/Users/Create.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Users/Delete.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Users/Details.cshtml">
-      <publishTime>11/12/2015 19:06:49</publishTime>
+      <publishTime>12/11/2015 19:06:49</publishTime>
     </File>
     <File Include="Views/Users/Edit.cshtml">
-      <publishTime>11/12/2015 19:06:50</publishTime>
+      <publishTime>12/11/2015 19:06:50</publishTime>
     </File>
     <File Include="Views/Users/Index.cshtml">
-      <publishTime>11/12/2015 19:06:50</publishTime>
+      <publishTime>12/11/2015 19:06:50</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>11/12/2015 19:06:50</publishTime>
+      <publishTime>12/11/2015 19:06:50</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
-      <publishTime>11/12/2015 19:06:50</publishTime>
+      <publishTime>12/11/2015 19:06:50</publishTime>
     </File>
     <File Include="Web.config">
       <publishTime>01/01/0001 00:00:00</publishTime>

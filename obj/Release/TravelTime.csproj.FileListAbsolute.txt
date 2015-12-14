@@ -100,3 +100,14 @@ E:\sdu\adsproj3\TravelTime\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 E:\sdu\adsproj3\TravelTime\obj\Release\TravelTime.csprojResolveAssemblyReference.cache
 E:\sdu\adsproj3\TravelTime\obj\Release\TravelTime.dll
 E:\sdu\adsproj3\TravelTime\obj\Release\TravelTime.pdb
+E:\sdu\adsproj3\TravelTime\bin\System.Net.Http.Formatting.dll
+E:\sdu\adsproj3\TravelTime\bin\System.Web.Helpers.dll
+E:\sdu\adsproj3\TravelTime\bin\System.Web.Http.dll
+E:\sdu\adsproj3\TravelTime\bin\System.Web.Http.WebHost.dll
+E:\sdu\adsproj3\TravelTime\bin\System.Web.Mvc.dll
+E:\sdu\adsproj3\TravelTime\bin\System.Web.Optimization.dll
+E:\sdu\adsproj3\TravelTime\bin\System.Web.Razor.dll
+E:\sdu\adsproj3\TravelTime\bin\System.Web.WebPages.Deployment.dll
+E:\sdu\adsproj3\TravelTime\bin\System.Web.WebPages.dll
+E:\sdu\adsproj3\TravelTime\bin\System.Web.WebPages.Razor.dll
+E:\sdu\adsproj3\TravelTime\bin\WebGrease.dll
