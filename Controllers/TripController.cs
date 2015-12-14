@@ -36,14 +36,26 @@ namespace TravelTime.Controllers
             
         }
 
+        public ActionResult IndexFromDay(int? id)
+        {
+            try
+            {
+                return RedirectToAction("Index", new { id = db.Trip.Find(id).UserId });
+            }
+            catch (Exception e)
+            {
+                return RedirectToAction("Index", "Users");
+            }
+        }
+
         public ActionResult Run(int? tripId)
         {
 
             ItineraryManager ItM = new ItineraryManager();
-
-            Thread myThread;
+            ItM.run(tripId.Value);
+            /*Thread myThread;
             myThread = new Thread(()=>ItM.run(tripId.Value));
-            myThread.Start();
+            myThread.Start();*/
             return RedirectToAction("DaysIndex", new { tripId = tripId });
         }
 
@@ -93,16 +105,16 @@ namespace TravelTime.Controllers
             {
                 return HttpNotFound();
             }
-            var step = db.Step
-                .Where(s => s.TripId == tripId)
-                .Where(s => ((DateTime)s.Time).Day == ((DateTime)date).Day)
-                .Where(s => ((DateTime)s.Time).Month == ((DateTime)date).Month)
-                .Where(s => ((DateTime)s.Time).Year == ((DateTime)date).Year)
-                .Include(s => s.Attraction1);
-
             Day day = new Day();
+
+            day.Steps = db.Step
+                    .Where(s => s.TripId == tripId)
+                    .Where(s => ((DateTime)s.Time).Day == ((DateTime)date).Day)
+                    .Where(s => ((DateTime)s.Time).Month == ((DateTime)date).Month)
+                    .Where(s => ((DateTime)s.Time).Year == ((DateTime)date).Year)
+                    .Include(s => s.Attraction1).OrderBy(o => o.Time).ToList();
+
             day.TripId = System.Convert.ToInt32(tripId);
-            day.Steps = step.OrderBy(o => o.Time).ToList();
             day.Date = System.Convert.ToDateTime(date);
             
             return View(day);
@@ -162,6 +174,15 @@ namespace TravelTime.Controllers
             return View(trip);
         }
 
+        public ActionResult StepDetails(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            return RedirectToAction("Details", "Steps", new { id = id });
+        }
+
         // GET: Trip/Create
         public ActionResult Create(int userId)
         {
@@ -215,7 +236,7 @@ namespace TravelTime.Controllers
             {
                 db.Entry(trip).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", new {id = trip.UserId });
             }
             ViewBag.UserId = new SelectList(db.User, "Id", "Firstname", trip.UserId);
             return View(trip);

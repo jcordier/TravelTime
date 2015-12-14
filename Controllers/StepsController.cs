@@ -70,13 +70,13 @@ namespace TravelTime.Controllers
         }
 
         // GET: Steps/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult Details(int id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Step step = db.Step.Find(id);
+            Step step = db.Step.Where(s => s.Id == id).ToList()[0];
             if (step == null)
             {
                 return HttpNotFound();
